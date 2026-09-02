@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    background-color: #FAF8F5;
+    color: #1E293B;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #C5963B;
+    color: #ffffff;
+  }
+}
+
+/* Custom Glass & Luxury Accents */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-dark {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #A67B2A 0%, #D1AC5D 50%, #8C6219 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 60%, #115E59 100%);
+}
+
+.subtle-mesh {
+  background-color: #FAF8F5;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(209, 172, 93, 0.08) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(13, 148, 136, 0.06) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(209, 172, 93, 0.05) 0px, transparent 50%);
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1EFE9;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9BAA3;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A67B2A;
+}
+
+/* Range input slider styling for Before/After */
+input[type=range]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #C5963B;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+  cursor: ew-resize;
+  -webkit-appearance: none;
+}
+
+/* Continuous Smooth Right-to-Left Marquee */
+@keyframes marquee-left {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-left 42s linear infinite;
+  will-change: transform;
+  overflow-anchor: none;
+}
+
+.animate-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.marquee-paused {
+  animation-play-state: paused !important;
+}
+
+/* Responsive edge gradient masks for marquee */
+.marquee-mask {
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent 100%);
+  overflow-anchor: none;
+}
+
+/* Mobile Drawer Animations */
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.animate-slideLeft {
+  animation: slideLeft 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}
