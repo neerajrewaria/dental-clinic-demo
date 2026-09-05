@@ -16,12 +16,22 @@ import { Footer } from './components/Footer';
 import { MobileStickyBar } from './components/MobileStickyBar';
 import { AppointmentModal } from './components/AppointmentModal';
 import { DemoNoticeModal } from './components/DemoNoticeModal';
+import { DemoExpiredScreen } from './components/DemoExpiredScreen';
+import { isDemoExpired } from './config/demoAccess';
 
 export const App: React.FC = () => {
+  // Check if the demo access period has expired
+  const expired = isDemoExpired();
+
   const [isBookingOpen, setIsBookingOpen] = useState<boolean>(false);
   const [preselectedServiceId, setPreselectedServiceId] = useState<string | undefined>(undefined);
   const [demoNoticeOpen, setDemoNoticeOpen] = useState<boolean>(false);
   const [demoNoticeMsg, setDemoNoticeMsg] = useState<string>('This feature will be available on the official website after launch.');
+
+  // If expired, completely block website access and show secure lock screen
+  if (expired) {
+    return <DemoExpiredScreen />;
+  }
 
   const handleOpenBooking = (serviceId?: string) => {
     setPreselectedServiceId(serviceId);
