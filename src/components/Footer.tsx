@@ -33,22 +33,22 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
               <div className="w-11 h-11 rounded-2xl bg-white p-1.5 shadow-lg border border-white/20 flex items-center justify-center shrink-0 overflow-hidden">
                 <img 
                   src="/logo.png" 
-                  alt="Neha Dental Clinic Official Logo" 
+                  alt="Vrinda Dental Clinic Official Logo" 
                   className="w-full h-full object-contain"
                 />
               </div>
               <div>
                 <span className="font-serif text-xl font-bold tracking-tight text-white block leading-tight">
-                  NEHA DENTAL CLINIC
+                  VRINDA DENTAL CLINIC
                 </span>
                 <span className="text-[10px] uppercase tracking-[0.2em] text-gold-400 font-semibold">
-                  Gurgaon • Sector 38
+                  Orthodontic & Implant Centre
                 </span>
               </div>
             </div>
 
             <p className="text-sand-300 text-xs sm:text-sm leading-relaxed">
-              Spearheaded by <strong className="text-white">{DOCTOR_DATA.name}</strong>, Neha Dental Clinic delivers bespoke, painless cosmetic dentistry, single-sitting rotary RCTs, Swiss dental implants, and clear aligners in a soothing, sterile environment.
+              Spearheaded by <strong className="text-white">{DOCTOR_DATA.name}</strong>, Vrinda Dental Clinic delivers bespoke, painless cosmetic dentistry, single-sitting rotary RCTs, Swiss dental implants, and clear aligners in a soothing, sterile environment.
             </p>
 
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-sand-300">
@@ -140,9 +140,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
         {/* Bottom Disclaimer & Copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-sand-400 text-center sm:text-left">
           <div>
-            <p>© {new Date().getFullYear()} Neha Dental Clinic. All Rights Reserved. Led by Dr. Akansha Srivastava, BDS.</p>
+            <p>© {new Date().getFullYear()} Vrinda Dental Clinic. All Rights Reserved. Led by Dr. Manju Sharma, BDS.</p>
             <p className="text-[11px] text-sand-500 mt-0.5">
-              Personalized concept & high-end digital identity crafted for Neha Dental Clinic, Sector 38 Gurugram.
+              Personalized concept & high-end digital identity crafted for Vrinda Dental Clinic Orthodontic and Implant Centre, Gurugram.
             </p>
           </div>
 

@@ -24,7 +24,7 @@ export const FAQSection: React.FC = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-2">
-            Transparent answers to help you prepare for your visit to Neha Dental Clinic.
+            Transparent answers to help you prepare for your visit to Vrinda Dental Clinic.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export const FAQSection: React.FC = () => {
               Have a specific question about your dental concern?
             </h4>
             <p className="text-xs text-slate-500 mt-0.5">
-              Speak directly with our clinic coordinator or message Dr. Akansha.
+              Speak directly with our clinic coordinator or message Dr. Manju Sharma.
             </p>
           </div>
 
@@ -78,7 +78,7 @@ export const FAQSection: React.FC = () => {
               <span>Call Clinic</span>
             </a>
             <a
-              href={`https://wa.me/${CLINIC_DATA.whatsapp}?text=Hello%20Dr.%20Akansha,%20I%20have%20a%20question%20regarding%20dental%20treatments.`}
+              href={`https://wa.me/${CLINIC_DATA.whatsapp}?text=Hello%20Dr.%20Manju,%20I%20have%20a%20question%20regarding%20dental%20treatments.`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-colors flex items-center gap-1.5"

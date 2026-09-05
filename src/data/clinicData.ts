@@ -1,41 +1,41 @@
 import { ClinicMeta, DoctorInfo, ServiceItem, Testimonial, BeforeAfterCase, FAQItem } from '../types';
 
 export const CLINIC_DATA: ClinicMeta = {
-  name: "Neha Dental Clinic",
-  tagline: "Best Dentist in Gurgaon",
-  doctor: "Dr. Akansha Srivastava",
+  name: "Vrinda Dental Clinic",
+  tagline: "Orthodontic and Implant Centre • Gurugram",
+  doctor: "Dr. Manju Sharma",
   address: {
-    line1: "SCO Shop No. 38, First Floor",
-    line2: "Huda Market, Islampur Colony",
-    area: "Sector 38",
+    line1: "On, Mata Rd, Opposite to Mamta Hospital",
+    line2: "Prem Nagar, Sector 13",
+    area: "Sector 13, Prem Nagar",
     city: "Gurugram, Haryana",
     pincode: "122001",
-    full: "SCO Shop No. 38, First Floor, Huda Market, Islampur Colony, Sector 38, Gurugram, Haryana – 122001",
-    landmark: "Above Huda Market Commercial Complex, Next to Central Park Sector 38"
+    full: "Vrinda Dental Clinic, On Mata Rd, opposite to Mamta hospital, Prem Nagar, Sector 13, Gurugram, Haryana 122001",
+    landmark: "Opposite to Mamta Hospital, Mata Road, Prem Nagar (Plus Code: F29M+RM Gurugram)"
   },
-  phones: ["070072 28830", "9450482005"],
-  whatsapp: "917007228830",
-  email: "care@nehadentalclinic.com",
+  phones: ["087000 39261"],
+  whatsapp: "918700039261",
+  email: "care@vrindadentalclinic.com",
   timings: {
-    days: "Monday – Saturday: 10:00 AM – 8:30 PM",
-    hours: "10:00 AM – 8:30 PM",
+    days: "Monday – Saturday: 10:00 AM – 8:00 PM",
+    hours: "10:00 AM – 8:00 PM",
     sunday: "Sunday: 10:30 AM – 2:00 PM (By Prior Appointment)",
     emergency: "24/7 Dental Emergency On-Call Assistance"
   },
   amenities: [
     {
-      title: "Woman-Owned Practice",
-      desc: "Compassionate, gentle touch and meticulous aesthetic precision spearheaded by Dr. Akansha Srivastava.",
+      title: "Women-Owned Practice",
+      desc: "Compassionate, gentle touch and meticulous aesthetic precision spearheaded by Dr. Manju Sharma.",
       icon: "HeartHandshake"
     },
     {
-      title: "On-Site Private Parking",
-      desc: "Hassle-free parking directly in front of the market complex with wheelchair ramp accessibility.",
+      title: "On-Site Easy Parking",
+      desc: "Hassle-free parking directly on Mata Road near Mamta Hospital with smooth accessibility.",
       icon: "Car"
     },
     {
       title: "Wheelchair Accessible",
-      desc: "Barrier-free access with lift/ramp assistance and wide clinic passageways for comfortable mobility.",
+      desc: "Barrier-free ground access with dedicated assistance for comfortable patient mobility.",
       icon: "Accessibility"
     },
     {
@@ -57,28 +57,28 @@ export const CLINIC_DATA: ClinicMeta = {
 };
 
 export const DOCTOR_DATA: DoctorInfo = {
-  name: "Dr. Akansha Srivastava",
-  title: "BDS | Dental Surgeon & Aesthetic Specialist",
+  name: "Dr. Manju Sharma",
+  title: "BDS | Dental Surgeon, Orthodontic & Implant Specialist",
   clinicRole: "Founder & Chief Dental Surgeon",
   experience: "10+ Years of Clinical Excellence",
   qualifications: [
     "Bachelor of Dental Surgery (BDS)",
-    "Advanced Certificate in Cosmetic Dentistry & Veneers",
+    "Advanced Certificate in Orthodontics & Clear Aligners",
     "Certified Rotary Endodontics & Single-Sitting RCT Specialist",
     "Fellowship in Modern Implantology & Digital Smile Design"
   ],
   philosophy: "We believe dentistry should never feel intimidating. True dental excellence is a harmony between precision clinical science, artistic beauty, and a gentle, compassionate human touch that preserves your natural teeth first.",
   specialties: [
     "Painless Rotary Root Canal Treatments",
-    "Micro-Aesthetic Smile Makeovers & Porcelain Veneers",
     "Precision Dental Implant Restorations",
     "Clear Invisible Aligners & Orthodontic Correction",
+    "Micro-Aesthetic Smile Makeovers & Porcelain Veneers",
     "Pediatric & Child-Friendly Dental Care"
   ],
   bio: [
-    "Dr. Akansha Srivastava is a distinguished Dental Surgeon recognized across Gurugram for her meticulous clinical standards, gentle demeanor, and artistic precision in restorative dentistry.",
-    "With over a decade of hands-on surgical and cosmetic experience, Dr. Akansha has transformed thousands of smiles—championing conservative dentistry where saving the natural tooth structure is always prioritized over aggressive interventions.",
-    "As the visionary leader of Neha Dental Clinic, she has curated an atmosphere where dental anxiety dissolves, replacing sterile clinical coldness with warm, attentive patient care supported by state-of-the-art diagnostic technology."
+    "Dr. Manju Sharma is a distinguished Dental Surgeon recognized across Gurugram for her meticulous clinical standards, gentle demeanor, and artistic precision in orthodontic and restorative dentistry.",
+    "With over a decade of hands-on surgical, orthodontic, and cosmetic experience, Dr. Manju Sharma has transformed thousands of smiles—championing conservative dentistry where saving the natural tooth structure is always prioritized over aggressive interventions.",
+    "As the visionary leader of Vrinda Dental Clinic Orthodontic and Implant Centre on Mata Road, Sector 13, she has curated an atmosphere where dental anxiety dissolves, replacing sterile clinical coldness with warm, attentive patient care supported by state-of-the-art diagnostic technology."
   ],
   image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=1000"
 };
@@ -127,7 +127,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     title: "Single-Sitting Rotary RCT",
     subtitle: "Painless infected pulp therapy to save your natural tooth",
     category: "rct",
-    description: "Experience modern painless endodontics. Utilizing computer-controlled rotary files and apex locators, Dr. Akansha eradicates deep nerve infections in a quiet, relaxed single appointment.",
+    description: "Experience modern painless endodontics. Utilizing computer-controlled rotary files and apex locators, Dr. Manju Sharma eradicates deep nerve infections in a quiet, relaxed single appointment.",
     benefits: [
       "99% completed in a single comfortable 40-minute sitting",
       "Advanced localized numbing ensures zero pain during procedure",
@@ -183,7 +183,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     title: "Pediatric Dental Care",
     subtitle: "Gentle, fear-free dentistry crafted specially for little smiles",
     category: "pediatric",
-    description: "We turn dental visits into positive adventures! From cavity prevention sealants and fluoride varnishes to painless fillings, Dr. Akansha creates a warm, tear-free environment for kids.",
+    description: "We turn dental visits into positive adventures! From cavity prevention sealants and fluoride varnishes to painless fillings, Dr. Manju Sharma creates a warm, tear-free environment for kids.",
     benefits: [
       "Tear-free, patient, and playful child-first approach",
       "Painless fluoride applications & cavity-preventing fissure sealants",
@@ -272,10 +272,10 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
   {
     id: "rev-1",
     author: "Pooja Malhotra",
-    location: "Sector 38, Gurugram",
+    location: "Sector 13, Gurugram",
     treatment: "Single-Sitting RCT & Zirconia Crown",
     rating: 5,
-    comment: "I had extreme dental anxiety due to past bad experiences. Dr. Akansha at Neha Dental Clinic made my Root Canal completely painless! She explained every single step calmly. The clinic in Huda Market is spotless, beautiful, and so calming. Sector 38 is lucky to have her!",
+    comment: "I had extreme dental anxiety due to past bad experiences. Dr. Manju Sharma at Vrinda Dental Clinic made my Root Canal completely painless! She explained every single step calmly. The clinic on Mata Road opposite Mamta Hospital is spotless, beautiful, and so calming. Gurugram is lucky to have her!",
     date: "2 weeks ago",
     verified: true,
     avatarBg: "bg-emerald-700"
@@ -283,10 +283,10 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
   {
     id: "rev-2",
     author: "Rohit Khanna",
-    location: "Sohna Road / South City II",
+    location: "Prem Nagar / Old Railway Road",
     treatment: "Clear Aligners Treatment",
     rating: 5,
-    comment: "Finished my clear aligner treatment here. Dr. Akansha’s precision is remarkable. Every monthly checkup was prompt with zero waiting. Highly recommend Neha Dental Clinic to anyone looking for genuine, ethical, and world-class dental care in Gurgaon.",
+    comment: "Finished my clear aligner treatment here. Dr. Manju Sharma’s precision is remarkable. Every monthly checkup was prompt with zero waiting. Highly recommend Vrinda Dental Clinic to anyone looking for genuine, ethical, and world-class dental care in Sector 13 Gurugram.",
     date: "1 month ago",
     verified: true,
     avatarBg: "bg-amber-700"
@@ -294,10 +294,10 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
   {
     id: "rev-3",
     author: "Dr. Sunita Varma",
-    location: "Sector 46, Gurgaon",
+    location: "Sector 14, Gurgaon",
     treatment: "Full Ceramic Veneers & Whitening",
     rating: 5,
-    comment: "As a physician myself, I am very particular about sterile protocols. Neha Dental Clinic follows hospital-grade sterilization. Dr. Akansha designed my smile makeover with incredible artistic sensibility. It looks completely natural, not fake white. Simply exceptional!",
+    comment: "As a physician myself, I am very particular about sterile protocols. Vrinda Dental Clinic follows hospital-grade sterilization. Dr. Manju Sharma designed my smile makeover with incredible artistic sensibility. It looks completely natural, not fake white. Simply exceptional!",
     date: "3 weeks ago",
     verified: true,
     avatarBg: "bg-teal-700"
@@ -305,10 +305,10 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
   {
     id: "rev-4",
     author: "Vikas Aggarwal",
-    location: "Cyber City Commuter, Gurgaon",
+    location: "Civil Lines / Sector 13",
     treatment: "Emergency Tooth Extraction & Implant",
     rating: 5,
-    comment: "Had severe sudden tooth pain on a Saturday evening. The clinic accommodated me immediately. Dr. Akansha gave instant relief, followed by an implant procedure that was totally smooth. Transparent pricing and no unnecessary treatments pushed.",
+    comment: "Had severe sudden tooth pain on a Saturday evening. The clinic on Mata Road accommodated me immediately. Dr. Manju Sharma gave instant relief, followed by an implant procedure that was totally smooth. Transparent pricing and no unnecessary treatments pushed.",
     date: "2 months ago",
     verified: true,
     avatarBg: "bg-blue-800"
@@ -316,10 +316,10 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
   {
     id: "rev-5",
     author: "Meenakshi Joshi",
-    location: "Islampur Colony / Sector 38",
+    location: "Prem Nagar, Sector 13",
     treatment: "Pediatric Dental Care for 6yo Daughter",
     rating: 5,
-    comment: "Finding a gentle dentist for kids is so hard. Dr. Akansha is a magician with children! My 6-year-old daughter came out smiling and laughing after her cavity filling. The woman-owned warmth and gentle touch makes all the difference.",
+    comment: "Finding a gentle dentist for kids is so hard. Dr. Manju Sharma is a magician with children! My 6-year-old daughter came out smiling and laughing after her cavity filling. The women-owned warmth and gentle touch makes all the difference.",
     date: "1 month ago",
     verified: true,
     avatarBg: "bg-rose-700"
@@ -327,10 +327,10 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
   {
     id: "rev-6",
     author: "Ananya Deshmukh",
-    location: "Golf Course Ext. Road, Gurgaon",
+    location: "MG Road, Gurgaon",
     treatment: "Cosmetic Smile Designing & Laser Whitening",
     rating: 5,
-    comment: "Got my smile prepped right before my wedding in Gurgaon. Dr. Akansha recommended laser whitening and minimal composite shaping. The results were stunning and totally natural! Zero tooth sensitivity afterwards. The best dental experience ever.",
+    comment: "Got my smile prepped right before my wedding in Gurgaon. Dr. Manju Sharma recommended laser whitening and minimal composite shaping. The results were stunning and totally natural! Zero tooth sensitivity afterwards. The best dental experience ever.",
     date: "3 weeks ago",
     verified: true,
     avatarBg: "bg-purple-700"
@@ -338,10 +338,10 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
   {
     id: "rev-7",
     author: "Col. Sanjeev Bakshi (Retd.)",
-    location: "Sector 31, Gurugram",
+    location: "Sector 12, Gurugram",
     treatment: "Full Arch Swiss Implant Rehabilitation",
     rating: 5,
-    comment: "I can chew properly after almost 4 years. Dr. Akansha’s surgical precision with implants is commendable. Honest clinic, zero inflated bills, dedicated parking in Huda Market, and very caring staff. Highest recommendation.",
+    comment: "I can chew properly after almost 4 years. Dr. Manju Sharma’s surgical precision with implants is commendable. Honest clinic, zero inflated bills, convenient parking on Mata Road, and very caring staff. Highest recommendation.",
     date: "1 month ago",
     verified: true,
     avatarBg: "bg-stone-700"
@@ -349,10 +349,10 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
   {
     id: "rev-8",
     author: "Shreya Singhal",
-    location: "Nirvana Country, Sector 50",
+    location: "Sector 14 / Old DLF",
     treatment: "Clear Aligners & Aesthetic Contouring",
     rating: 5,
-    comment: "Transparent aligners done with perfection! I was worried about speech issues during client meetings, but these aligners were totally invisible and comfortable. Sector 38 clinic is spotless and modern.",
+    comment: "Transparent aligners done with perfection! I was worried about speech issues during client meetings, but these aligners were totally invisible and comfortable. Vrinda Dental Clinic is spotless, modern, and very easily accessible opposite Mamta Hospital.",
     date: "2 weeks ago",
     verified: true,
     avatarBg: "bg-emerald-800"
@@ -363,11 +363,11 @@ export const FAQS_DATA: FAQItem[] = [
   {
     category: "General & Appointments",
     question: "Do I need to book an appointment beforehand?",
-    answer: "To ensure every patient receives dedicated, unhurried time with Dr. Akansha and zero waiting time in the clinic, prior appointment booking is strongly recommended. However, for acute dental emergencies, walk-in urgent cases are attended to with immediate priority."
+    answer: "To ensure every patient receives dedicated, unhurried time with Dr. Manju Sharma and zero waiting time in the clinic, prior appointment booking is strongly recommended. However, for acute dental emergencies, walk-in urgent cases are attended to with immediate priority."
   },
   {
     category: "Treatments & Pain",
-    question: "Are root canal treatments really painless at Neha Dental Clinic?",
+    question: "Are root canal treatments really painless at Vrinda Dental Clinic?",
     answer: "Yes, 100%. We utilize advanced computer-assisted local anesthesia, painless computerized rotary endodontics, and digital apex locators. Over 95% of our patients report feeling no discomfort throughout the single-sitting procedure."
   },
   {
@@ -377,12 +377,12 @@ export const FAQS_DATA: FAQItem[] = [
   },
   {
     category: "Location & Amenities",
-    question: "Is there parking available at Neha Dental Clinic in Sector 38?",
-    answer: "Yes, abundant dedicated on-site parking is available right in front of SCO Shop No. 38 at Huda Market, Islampur Colony, Sector 38. The clinic is equipped with wheelchair-accessible parking and smooth ramp access."
+    question: "How do I reach Vrinda Dental Clinic on Mata Road, Sector 13?",
+    answer: "Vrinda Dental Clinic is conveniently located on Mata Road, directly opposite to Mamta Hospital in Prem Nagar, Sector 13, Gurugram (Plus Code: F29M+RM Gurugram). Convenient parking and wheelchair-friendly ground access are available on-site."
   },
   {
     category: "Cost & Transparency",
     question: "How transparent is the pricing and payment options?",
-    answer: "We practice 100% transparent, ethical dentistry. After your comprehensive oral examination and digital X-ray evaluation, Dr. Akansha provides a clear written treatment plan with fixed pricing and zero hidden costs. We accept all major UPI, Cards, NetBanking, and interest-free EMI options."
+    answer: "We practice 100% transparent, ethical dentistry. After your comprehensive oral examination and digital X-ray evaluation, Dr. Manju Sharma provides a clear written treatment plan with fixed pricing and zero hidden costs. We accept all major UPI, Cards, NetBanking, and interest-free EMI options."
   }
 ];

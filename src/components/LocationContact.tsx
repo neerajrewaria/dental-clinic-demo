@@ -16,7 +16,7 @@ interface LocationContactProps {
 }
 
 export const LocationContact: React.FC<LocationContactProps> = () => {
-  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Neha Dental Clinic SCO Shop No 38 First Floor Huda Market Islampur Colony Sector 38 Gurugram Haryana 122001")}`;
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Vrinda Dental Clinic Mata Rd opposite to Mamta hospital Prem Nagar Sector 13 Gurugram Haryana 122001")}`;
 
   return (
     <section id="location" className="py-16 md:py-24 bg-[#FAF8F5] relative">
@@ -26,13 +26,13 @@ export const LocationContact: React.FC<LocationContactProps> = () => {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="text-xs uppercase font-bold tracking-widest text-gold-700 mb-2 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold-100/60 border border-gold-200">
             <MapPin className="w-3.5 h-3.5 text-gold-600" />
-            <span>Visit Us in Sector 38, Gurugram</span>
+            <span>Visit Us in Sector 13, Gurugram</span>
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-luxuryDark-950 mt-2">
             Prime Location & Hours
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-2">
-            Centrally situated at Huda Market with dedicated on-site parking and wheelchair accessibility.
+            Conveniently situated on Mata Road opposite Mamta Hospital with easy on-site parking and ground accessibility.
           </p>
         </div>
 
@@ -119,7 +119,7 @@ export const LocationContact: React.FC<LocationContactProps> = () => {
                 </span>
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-50 text-rose-800 text-xs font-semibold border border-rose-200/60">
                   <Sparkles className="w-3.5 h-3.5 text-rose-500" />
-                  Woman-Led Clinic
+                  Women-Owned Practice
                 </span>
               </div>
 
@@ -139,7 +139,7 @@ export const LocationContact: React.FC<LocationContactProps> = () => {
               </a>
 
               <a
-                href={`https://wa.me/${CLINIC_DATA.whatsapp}?text=Hello%20Dr.%20Akansha,%20I%20need%20assistance%20finding%20Neha%20Dental%20Clinic%20in%20Sector%2038.`}
+                href={`https://wa.me/${CLINIC_DATA.whatsapp}?text=Hello%20Dr.%20Manju,%20I%20need%20assistance%20finding%20Vrinda%20Dental%20Clinic%20on%20Mata%20Road,%20Sector%2013.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm transition-colors flex items-center justify-center gap-2"
@@ -155,8 +155,8 @@ export const LocationContact: React.FC<LocationContactProps> = () => {
             
             {/* Embedded Live Google Maps Iframe */}
             <iframe
-              title="Neha Dental Clinic Sector 38 Gurugram Map Location"
-              src="https://maps.google.com/maps?q=SCO+Shop+No+38+First+Floor+Huda+Market+Islampur+Colony+Sector+38+Gurugram+Haryana+122001&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              title="Vrinda Dental Clinic Mata Road Sector 13 Gurugram Map Location"
+              src="https://maps.google.com/maps?q=Vrinda+Dental+Clinic+Mata+Rd+opposite+Mamta+hospital+Prem+Nagar+Sector+13+Gurugram+Haryana+122001&t=&z=16&ie=UTF8&iwloc=&output=embed"
               className="w-full h-full min-h-[360px] border-0"
               allowFullScreen={false}
               loading="lazy"
@@ -170,10 +170,10 @@ export const LocationContact: React.FC<LocationContactProps> = () => {
                   Gurugram Prime Location
                 </p>
                 <p className="font-serif text-sm font-bold text-white">
-                  SCO 38, Huda Market, Sector 38
+                  Mata Rd, Opp. Mamta Hospital, Sector 13
                 </p>
                 <p className="text-[11px] text-sand-300">
-                  Easy connectivity from Medanta, Sohna Road & Subhash Chowk
+                  Prem Nagar • Plus Code: F29M+RM Gurugram
                 </p>
               </div>
 

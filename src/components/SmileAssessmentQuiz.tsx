@@ -77,7 +77,7 @@ export const SmileAssessmentQuiz: React.FC<SmileAssessmentQuizProps> = ({ onOpen
         title: "Painless Single-Sitting Rotary RCT & Emergency Evaluation",
         serviceId: "root-canal-treatment",
         desc: "Based on your symptoms, our urgent priority is eradicating nerve inflammation and relieving discomfort in a single 40-minute comfortable session using computerized apex locators.",
-        doctorTip: "Avoid hot fluids and do not place aspirin on the gum. Dr. Akansha will perform a digital radiograph upon arrival.",
+        doctorTip: "Avoid hot fluids and do not place aspirin on the gum. Dr. Manju Sharma will perform a digital radiograph upon arrival.",
         badge: "Priority Care Recommended"
       };
     } else if (answers.goal === 'aligners') {
@@ -92,7 +92,7 @@ export const SmileAssessmentQuiz: React.FC<SmileAssessmentQuizProps> = ({ onOpen
       return {
         title: "Precision Swiss Titanium Dental Implant Planning",
         serviceId: "dental-implants",
-        desc: "Replacing missing teeth restores chewing strength and prevents facial bone recession. Dr. Akansha provides computer-guided implant planning with life-long durability.",
+        desc: "Replacing missing teeth restores chewing strength and prevents facial bone recession. Dr. Manju Sharma provides computer-guided implant planning with life-long durability.",
         doctorTip: "Restores 100% natural chewing force with zero damage to adjacent teeth.",
         badge: "Permanent Restorative Care"
       };
@@ -131,7 +131,7 @@ export const SmileAssessmentQuiz: React.FC<SmileAssessmentQuizProps> = ({ onOpen
             Find Your Ideal Treatment Plan
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-2">
-            Answer 3 quick questions to receive an instant personalized recommendation from Dr. Akansha Srivastava.
+            Answer 3 quick questions to receive an instant personalized recommendation from Dr. Manju Sharma.
           </p>
         </div>
 
@@ -204,7 +204,7 @@ export const SmileAssessmentQuiz: React.FC<SmileAssessmentQuizProps> = ({ onOpen
                     Have you experienced any of these symptoms recently?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-500 mb-6">
-                    This helps Dr. Akansha prepare relevant diagnostic tools for your visit.
+                    This helps Dr. Manju Sharma prepare relevant diagnostic tools for your visit.
                   </p>
 
                   <div className="space-y-3">
@@ -237,7 +237,7 @@ export const SmileAssessmentQuiz: React.FC<SmileAssessmentQuizProps> = ({ onOpen
               {currentStep === 3 && (
                 <div className="animate-fadeIn">
                   <h3 className="font-serif text-xl sm:text-2xl font-bold text-slate-900 mb-2">
-                    When would you prefer to visit Sector 38 Gurgaon?
+                    When would you prefer to visit Sector 13 Gurugram (Mata Road)?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-500 mb-6">
                     We reserve dedicated zero-wait consultation slots.
@@ -308,7 +308,7 @@ export const SmileAssessmentQuiz: React.FC<SmileAssessmentQuizProps> = ({ onOpen
                 </button>
 
                 <a
-                  href={`https://wa.me/${CLINIC_DATA.whatsapp}?text=Hi%20Dr.%20Akansha,%20I%20completed%20the%20Smile%20Assessment%20on%20your%20website.%20My%20recommended%20treatment%20is:%20${encodeURIComponent(rec.title)}`}
+                  href={`https://wa.me/${CLINIC_DATA.whatsapp}?text=Hi%20Dr.%20Manju,%20I%20completed%20the%20Smile%20Assessment%20on%20your%20website.%20My%20recommended%20treatment%20is:%20${encodeURIComponent(rec.title)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="py-3.5 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-md transition-colors flex items-center justify-center gap-2"

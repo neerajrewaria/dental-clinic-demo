@@ -67,7 +67,7 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ onOpenBooking }) => 
             </h2>
           </div>
           <p className="text-sm sm:text-base text-slate-600 max-w-lg leading-relaxed">
-            Every procedure at Neha Dental Clinic combines precision microsurgery, biological enamel preservation, and painless anesthetic technology.
+            Every procedure at Vrinda Dental Clinic combines precision microsurgery, biological enamel preservation, and painless anesthetic technology.
           </p>
         </div>
 

@@ -48,7 +48,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
   const navItems = [
     { 
       name: 'About Doctor', 
-      subtitle: 'Dr. Akansha Srivastava & Philosophy', 
+      subtitle: 'Dr. Manju Sharma & Philosophy', 
       href: '#doctor',
       icon: <User className="w-5 h-5 text-gold-600" />
     },
@@ -84,7 +84,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
     },
     { 
       name: 'Location & Hours', 
-      subtitle: 'SCO 38, Huda Market, Sector 38', 
+      subtitle: 'Mata Rd, Opp. Mamta Hospital, Sector 13', 
       href: '#location',
       icon: <MapPin className="w-5 h-5 text-gold-600" />
     },
@@ -107,7 +107,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
             <span className="hidden md:inline-block text-sand-400">|</span>
             <span className="hidden md:inline-flex items-center gap-1 text-sand-300">
               <MapPin className="w-3.5 h-3.5 text-gold-400" />
-              SCO 38, Huda Market, Sector 38, Gurugram
+              Mata Rd, Opp. Mamta Hospital, Sector 13, Gurugram
             </span>
           </div>
 
@@ -122,7 +122,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
             <span className="text-white/20">|</span>
             <span className="hidden sm:inline-flex items-center gap-1 text-sand-300">
               <Clock className="w-3 h-3 text-gold-400" />
-              10:00 AM – 8:30 PM
+              10:00 AM – 8:00 PM
             </span>
           </div>
         </div>
@@ -143,16 +143,16 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
             <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-white p-1.5 shadow-md border border-sand-200/90 group-hover:scale-105 transition-transform flex items-center justify-center shrink-0 overflow-hidden">
               <img 
                 src="/logo.png" 
-                alt="Neha Dental Clinic Official Logo" 
+                alt="Vrinda Dental Clinic Official Logo" 
                 className="w-full h-full object-contain"
               />
             </div>
             <div className="flex flex-col">
               <span className="font-serif text-lg sm:text-xl font-bold tracking-tight text-luxuryDark-950 leading-tight">
-                NEHA DENTAL CLINIC
+                VRINDA DENTAL CLINIC
               </span>
               <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.18em] text-gold-700 font-semibold flex items-center gap-1">
-                Dr. Akansha Srivastava <span className="text-sand-400">•</span> Gurugram
+                Dr. Manju Sharma <span className="text-sand-400">•</span> Gurugram
               </span>
             </div>
           </a>
@@ -173,7 +173,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
           {/* Desktop Action CTAs */}
           <div className="hidden sm:flex items-center gap-3">
             <a
-              href={`https://wa.me/${CLINIC_DATA.whatsapp}?text=Hello%20Dr.%20Akansha,%20I%20would%20like%20to%20inquire%20about%20a%20dental%20consultation%20at%20Neha%20Dental%20Clinic.`}
+              href={`https://wa.me/${CLINIC_DATA.whatsapp}?text=Hello%20Dr.%20Manju,%20I%20would%20like%20to%20inquire%20about%20a%20dental%20consultation%20at%20Vrinda%20Dental%20Clinic.`}
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 rounded-xl border border-sand-300/80 text-emerald-700 hover:bg-emerald-50 hover:border-emerald-300 transition-all flex items-center justify-center"
@@ -228,10 +228,10 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
                 </div>
                 <div>
                   <h3 className="font-serif text-base font-bold text-luxuryDark-950 leading-tight">
-                    NEHA DENTAL CLINIC
+                    VRINDA DENTAL CLINIC
                   </h3>
                   <span className="text-[10px] uppercase font-bold tracking-wider text-gold-700">
-                    Dr. Akansha Srivastava • Sector 38
+                    Dr. Manju Sharma • Sector 13
                   </span>
                 </div>
               </div>
@@ -302,7 +302,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
                   <span>Call Doctor</span>
                 </a>
                 <a
-                  href={`https://wa.me/${CLINIC_DATA.whatsapp}?text=Hello%20Dr.%20Akansha,%20I%20would%20like%20to%20book%20an%20appointment%20at%20Neha%20Dental%20Clinic.`}
+                  href={`https://wa.me/${CLINIC_DATA.whatsapp}?text=Hello%20Dr.%20Manju,%20I%20would%20like%20to%20book%20an%20appointment%20at%20Vrinda%20Dental%20Clinic.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="py-2.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm active:scale-95"
@@ -315,7 +315,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
               {/* Address Indicator */}
               <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-sand-50 border border-sand-200 text-[11px] text-slate-600">
                 <MapPin className="w-3.5 h-3.5 text-gold-600 shrink-0" />
-                <span className="truncate">SCO 38, 1st Floor, Huda Market, Sector 38, Gurugram</span>
+                <span className="truncate">Mata Rd, Opp. Mamta Hospital, Sector 13, Gurugram</span>
               </div>
 
             </div>

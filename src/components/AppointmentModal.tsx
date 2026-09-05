@@ -81,7 +81,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
   };
 
   const generateWhatsAppMessage = () => {
-    const text = `*New Appointment Request - Neha Dental Clinic*\n\n*Patient Name:* ${patientName}\n*Phone:* ${patientPhone}\n*Treatment:* ${getServiceName()}\n*Preferred Date:* ${selectedDate}\n*Time Slot:* ${selectedSlot}\n*Notes:* ${notes || 'None'}\n\n_Sent via Neha Dental Clinic Website_`;
+    const text = `*New Appointment Request - Vrinda Dental Clinic*\n\n*Patient Name:* ${patientName}\n*Phone:* ${patientPhone}\n*Treatment:* ${getServiceName()}\n*Preferred Date:* ${selectedDate}\n*Time Slot:* ${selectedSlot}\n*Notes:* ${notes || 'None'}\n\n_Sent via Vrinda Dental Clinic Website_`;
     return encodeURIComponent(text);
   };
 
@@ -95,13 +95,13 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
             <div className="w-10 h-10 rounded-xl bg-white p-1 border border-white/20 shadow-md flex items-center justify-center shrink-0 overflow-hidden">
               <img 
                 src="/logo.png" 
-                alt="Neha Dental Clinic Logo" 
+                alt="Vrinda Dental Clinic Logo" 
                 className="w-full h-full object-contain"
               />
             </div>
             <div>
               <span className="text-[10px] uppercase font-bold tracking-widest text-gold-400 block">
-                Neha Dental Clinic • Sector 38
+                Vrinda Dental Clinic • Sector 13
               </span>
               <h3 className="font-serif text-lg sm:text-xl font-bold text-white">
                 Book Dedicated Consultation
@@ -229,7 +229,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
               {/* Zero Wait & Privacy Promise */}
               <div className="flex items-center gap-2 text-xs text-slate-500 bg-sand-50 p-2.5 rounded-xl border border-sand-200">
                 <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-                <span>Zero-Wait slot reserved with Dr. Akansha Srivastava. 100% confidential.</span>
+                <span>Zero-Wait slot reserved with Dr. Manju Sharma. 100% confidential.</span>
               </div>
 
               {/* Submit CTA */}
@@ -264,22 +264,22 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
                   Thank You, {patientName}!
                 </h3>
                 <p className="text-slate-600 text-xs sm:text-sm mt-1">
-                  Your appointment request for <strong>{getServiceName()}</strong> on <strong>{selectedDate} ({selectedSlot})</strong> has been received by Dr. Akansha’s clinic team.
+                  Your appointment request for <strong>{getServiceName()}</strong> on <strong>{selectedDate} ({selectedSlot})</strong> has been received by Dr. Manju Sharma’s clinic team.
                 </p>
               </div>
 
               <div className="p-4 rounded-2xl bg-sand-50 border border-sand-200 text-left text-xs space-y-1.5">
                 <div className="flex items-center justify-between text-slate-700">
                   <span className="text-slate-500">Clinic:</span>
-                  <strong className="text-slate-900">Neha Dental Clinic</strong>
+                  <strong className="text-slate-900">Vrinda Dental Clinic</strong>
                 </div>
                 <div className="flex items-center justify-between text-slate-700">
                   <span className="text-slate-500">Surgeon:</span>
-                  <strong className="text-slate-900">Dr. Akansha Srivastava</strong>
+                  <strong className="text-slate-900">Dr. Manju Sharma</strong>
                 </div>
                 <div className="flex items-center justify-between text-slate-700">
                   <span className="text-slate-500">Address:</span>
-                  <strong className="text-slate-900">SCO 38, Huda Market, Sec 38 Gurgaon</strong>
+                  <strong className="text-slate-900">Mata Rd, Opp. Mamta Hospital, Sec 13 Gurgaon</strong>
                 </div>
               </div>
 

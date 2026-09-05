@@ -48,7 +48,7 @@ export const DoctorSpotlight: React.FC<DoctorSpotlightProps> = ({ onOpenBooking 
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 aspect-[4/5] group">
                 <img 
                   src={DOCTOR_DATA.image} 
-                  alt={`Dr. Akansha Srivastava - Dental Surgeon at Neha Dental Clinic Gurgaon`}
+                  alt={`Dr. Manju Sharma - Dental Surgeon at Vrinda Dental Clinic Gurgaon`}
                   loading="lazy"
                   crossOrigin="anonymous"
                   onError={(e) => {
@@ -125,7 +125,7 @@ export const DoctorSpotlight: React.FC<DoctorSpotlightProps> = ({ onOpenBooking 
                 className="px-6 py-3.5 rounded-xl bg-luxuryDark-950 text-gold-300 hover:text-white font-semibold text-sm shadow-md hover:shadow-xl transition-all duration-300 flex items-center gap-2 border border-gold-500/30"
               >
                 <Calendar className="w-4 h-4 text-gold-400" />
-                <span>Schedule Consultation with Dr. Akansha</span>
+                <span>Schedule Consultation with Dr. Manju Sharma</span>
               </button>
 
               <a

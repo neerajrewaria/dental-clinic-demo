@@ -109,7 +109,7 @@ export const ReviewsSection: React.FC = () => {
               Loved & Trusted Across Gurgaon
             </h2>
             <p className="text-slate-600 text-xs sm:text-sm mt-2 max-w-xl">
-              Patients from Sector 38, Sohna Road, Sector 46, DLF, and Golf Course Road share their genuine smile transformation journeys with Dr. Akansha Srivastava.
+              Patients from Sector 13, Prem Nagar, Old Railway Road, Sector 14, and across Gurugram share their genuine smile transformation journeys with Dr. Manju Sharma.
             </p>
           </div>
 
@@ -128,7 +128,7 @@ export const ReviewsSection: React.FC = () => {
                 Google Rating • 100% Positive Care
               </span>
               <span className="text-[11px] text-slate-500">
-                Verified reviews from Sector 38 patients
+                Verified reviews from Sector 13 & Gurugram patients
               </span>
             </div>
           </div>

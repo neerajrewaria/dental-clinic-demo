@@ -7,14 +7,14 @@ export const PatientExperienceJourney: React.FC = () => {
       number: '01',
       title: 'Warm Welcome & Digital Diagnostics',
       subtitle: 'Zero-wait arrival & high-definition digital X-rays',
-      desc: 'You are greeted into our tranquil clinic in Huda Market Sector 38. We start with comfortable digital imaging and a relaxed conversation to understand your goals with zero rush.',
+      desc: 'You are greeted into our tranquil clinic on Mata Road, Sector 13. We start with comfortable digital imaging and a relaxed conversation to understand your goals with zero rush.',
       icon: <Stethoscope className="w-6 h-6 text-gold-600" />
     },
     {
       number: '02',
       title: 'Transparent Treatment Plan',
       subtitle: 'Clear options, fixed pricing, zero hidden surprises',
-      desc: 'Dr. Akansha walks you through your 3D digital scans on screen, explaining every option with complete transparency so you are 100% in control of your dental decisions.',
+      desc: 'Dr. Manju Sharma walks you through your 3D digital scans on screen, explaining every option with complete transparency so you are 100% in control of your dental decisions.',
       icon: <ShieldCheck className="w-6 h-6 text-gold-600" />
     },
     {
@@ -41,7 +41,7 @@ export const PatientExperienceJourney: React.FC = () => {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs uppercase font-bold tracking-widest text-gold-700 mb-2 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold-50 border border-gold-200">
             <Sparkles className="w-3.5 h-3.5 text-gold-600" />
-            <span>The Neha Dental Experience</span>
+            <span>The Vrinda Dental Experience</span>
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-luxuryDark-950 mt-3">
             Designed for Your Peace of Mind

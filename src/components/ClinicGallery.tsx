@@ -43,12 +43,12 @@ export const ClinicGallery: React.FC = () => {
               <span>Clinic Atmosphere & Hygiene</span>
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-luxuryDark-950 mt-2">
-              Inside Neha Dental Clinic
+              Inside Vrinda Dental Clinic
             </h2>
           </div>
           <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-600 bg-white px-4 py-2.5 rounded-2xl border border-sand-200 shadow-sm">
             <MapPin className="w-4 h-4 text-gold-600 shrink-0" />
-            <span>SCO 38, First Floor, Huda Market, Sector 38, Gurugram</span>
+            <span>Mata Rd, Opp. Mamta Hospital, Prem Nagar, Sector 13, Gurugram</span>
           </div>
         </div>
 
@@ -94,7 +94,7 @@ export const ClinicGallery: React.FC = () => {
 
         {/* Honest Production Note */}
         <div className="mt-8 p-4 rounded-2xl bg-white/70 border border-dashed border-sand-300 text-center text-xs text-slate-500 max-w-2xl mx-auto">
-          💡 <strong className="text-slate-700">Personalized Demo Architecture:</strong> These high-resolution visual placeholders are structured with clean CDN hooks for instant drag-and-drop replacement with Neha Dental Clinic's photography.
+          💡 <strong className="text-slate-700">Personalized Demo Architecture:</strong> These high-resolution visual placeholders are structured with clean CDN hooks for instant drag-and-drop replacement with Vrinda Dental Clinic's photography.
         </div>
 
       </div>

@@ -35,11 +35,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             <div className="inline-flex flex-wrap items-center gap-2 mb-4">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white text-luxuryDark-900 border border-sand-300 text-xs font-semibold shadow-sm">
                 <Sparkles className="w-3.5 h-3.5 text-gold-500" />
-                <span>Sector 38, Gurgaon’s Premier Dental Practice</span>
+                <span>Sector 13, Gurgaon’s Premier Dental Practice</span>
               </span>
               <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-rose-50 text-rose-800 border border-rose-200/80 text-xs font-semibold">
                 <Heart className="w-3 h-3 text-rose-500 fill-rose-500" />
-                <span>Woman-Owned Clinic</span>
+                <span>Women-Owned Practice</span>
               </span>
             </div>
 
@@ -126,7 +126,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-sand-100 aspect-[4/5] group">
                 <img 
                   src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1000" 
-                  alt="Neha Dental Clinic - Dr. Akansha Srivastava Consulting Room"
+                  alt="Vrinda Dental Clinic - Dr. Manju Sharma Consulting Room" 
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 />
                 

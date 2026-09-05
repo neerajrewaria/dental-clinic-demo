@@ -43,7 +43,7 @@ export const App: React.FC = () => {
         {/* 2. Trust Stats & Amenities */}
         <TrustStats />
 
-        {/* 3. Meet Dr. Akansha Srivastava */}
+        {/* 3. Meet Dr. Manju Sharma */}
         <DoctorSpotlight onOpenBooking={() => handleOpenBooking()} />
 
         {/* 4. Treatments & Procedures Grid */}
