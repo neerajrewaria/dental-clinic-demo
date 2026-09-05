@@ -1,13 +1,30 @@
 import React, { useState } from 'react';
 import { FAQS_DATA } from '../data/clinicData';
 import { ChevronDown, HelpCircle, PhoneCall, MessageCircle } from 'lucide-react';
-import { CLINIC_DATA } from '../data/clinicData';
 
-export const FAQSection: React.FC = () => {
+interface FAQSectionProps {
+  onDemoAction?: (msg?: string) => void;
+}
+
+export const FAQSection: React.FC<FAQSectionProps> = ({ onDemoAction }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleFAQ = (idx: number) => {
     setOpenIndex(openIndex === idx ? null : idx);
+  };
+
+  const handleCallClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (onDemoAction) {
+      onDemoAction('Calling functionality will be available on the official website after launch.');
+    }
+  };
+
+  const handleWhatsAppClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (onDemoAction) {
+      onDemoAction('This feature will be available on the official website after launch.');
+    }
   };
 
   return (
@@ -70,22 +87,20 @@ export const FAQSection: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-2">
-            <a
-              href={`tel:${CLINIC_DATA.phones[0].replace(/\s+/g, '')}`}
+            <button
+              onClick={handleCallClick}
               className="px-4 py-2.5 rounded-xl bg-white hover:bg-gold-50 border border-sand-300 text-slate-800 text-xs font-bold transition-colors flex items-center gap-1.5"
             >
               <PhoneCall className="w-3.5 h-3.5 text-gold-600" />
               <span>Call Clinic</span>
-            </a>
-            <a
-              href={`https://wa.me/${CLINIC_DATA.whatsapp}?text=Hello%20Dr.%20Manju,%20I%20have%20a%20question%20regarding%20dental%20treatments.`}
-              target="_blank"
-              rel="noopener noreferrer"
+            </button>
+            <button
+              onClick={handleWhatsAppClick}
               className="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-colors flex items-center gap-1.5"
             >
               <MessageCircle className="w-3.5 h-3.5" />
               <span>WhatsApp Us</span>
-            </a>
+            </button>
           </div>
         </div>
 

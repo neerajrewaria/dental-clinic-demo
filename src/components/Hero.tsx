@@ -15,9 +15,10 @@ import {
 
 interface HeroProps {
   onOpenBooking: () => void;
+  onDemoAction?: (msg?: string) => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
+export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onDemoAction }) => {
   return (
     <section className="relative overflow-hidden pt-6 pb-16 md:pt-12 md:pb-24 subtle-mesh">
       {/* Decorative ambient background glows */}
@@ -149,13 +150,17 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                       </p>
                     </div>
 
-                    <a
-                      href={`tel:${CLINIC_DATA.phones[0].replace(/\s+/g, '')}`}
+                    <button
+                      onClick={() => {
+                        if (onDemoAction) {
+                          onDemoAction('Calling functionality will be available on the official website after launch.');
+                        }
+                      }}
                       className="w-10 h-10 rounded-xl bg-gold-500 hover:bg-gold-400 text-luxuryDark-950 flex items-center justify-center shrink-0 shadow-md transition-colors"
-                      title="Direct Call to Doctor's Clinic"
+                      title="Doctor's Clinic (Demo Mode)"
                     >
                       <PhoneCall className="w-4 h-4" />
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>

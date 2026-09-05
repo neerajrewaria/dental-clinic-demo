@@ -4,16 +4,25 @@ import {
   MapPin, 
   Phone, 
   Heart, 
-  ArrowUp
+  ArrowUp,
+  Sparkles
 } from 'lucide-react';
 
 interface FooterProps {
   onOpenBooking: (serviceId?: string) => void;
+  onDemoAction?: (msg?: string) => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
+export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onDemoAction }) => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleCallClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (onDemoAction) {
+      onDemoAction('Calling functionality will be available on the official website after launch.');
+    }
   };
 
   return (
@@ -53,7 +62,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
 
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-sand-300">
               <Heart className="w-3.5 h-3.5 text-rose-400 fill-rose-400" />
-              <span>Proudly Woman-Owned & Patient-First</span>
+              <span>Proudly Women-Owned & Patient-First</span>
             </div>
           </div>
 
@@ -85,7 +94,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
             <div className="space-y-2 text-xs sm:text-sm text-sand-300">
               <div>
                 <strong className="text-white block font-medium">Mon – Sat:</strong>
-                <span>10:00 AM – 8:30 PM</span>
+                <span>10:00 AM – 8:00 PM</span>
               </div>
               <div>
                 <strong className="text-white block font-medium">Sunday:</strong>
@@ -104,7 +113,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
           {/* Location & Quick Contact (Col 3) */}
           <div className="lg:col-span-3 space-y-3">
             <h4 className="text-xs uppercase font-bold tracking-widest text-gold-400">
-              Gurgaon Location
+              Gurugram Location
             </h4>
             
             <div className="space-y-2.5 text-xs sm:text-sm text-sand-300">
@@ -117,9 +126,13 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                 <Phone className="w-4 h-4 text-gold-400 shrink-0" />
                 <div className="flex flex-col">
                   {CLINIC_DATA.phones.map((p, i) => (
-                    <a key={i} href={`tel:${p.replace(/\s+/g, '')}`} className="hover:text-white font-medium">
+                    <button 
+                      key={i} 
+                      onClick={handleCallClick}
+                      className="hover:text-gold-300 font-medium text-left transition-colors"
+                    >
                       {p}
-                    </a>
+                    </button>
                   ))}
                 </div>
               </div>
@@ -137,18 +150,26 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
 
         </div>
 
-        {/* Bottom Disclaimer & Copyright */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-sand-400 text-center sm:text-left">
-          <div>
-            <p>© {new Date().getFullYear()} Vrinda Dental Clinic. All Rights Reserved. Led by Dr. Manju Sharma, BDS.</p>
-            <p className="text-[11px] text-sand-500 mt-0.5">
-              Personalized concept & high-end digital identity crafted for Vrinda Dental Clinic Orthodontic and Implant Centre, Gurugram.
+        {/* Bottom Disclaimer & Demo Credit */}
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-sand-400 text-center md:text-left">
+          <div className="space-y-1.5 max-w-2xl">
+            <div className="flex items-center justify-center md:justify-start gap-2 text-sand-200">
+              <Sparkles className="w-3.5 h-3.5 text-gold-400" />
+              <p className="font-semibold text-white">
+                Demo Website Created by <span className="text-gold-400 font-bold">Neeraj</span>
+              </p>
+            </div>
+            <p className="text-[11px] text-sand-400 leading-relaxed">
+              This is a demonstration website concept and is not the official website of Vrinda Dental Clinic.
+            </p>
+            <p className="text-[10px] text-sand-500">
+              © {new Date().getFullYear()} Vrinda Dental Clinic Orthodontic and Implant Centre, Gurugram. All concept and design presentation rights reserved.
             </p>
           </div>
 
           <button
             onClick={scrollToTop}
-            className="p-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-sand-300 hover:text-white transition-colors border border-white/10 flex items-center gap-1.5 text-xs font-medium"
+            className="p-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-sand-300 hover:text-white transition-colors border border-white/10 flex items-center gap-1.5 text-xs font-medium shrink-0 shadow-sm"
             aria-label="Scroll back to top"
           >
             <span>Back to top</span>

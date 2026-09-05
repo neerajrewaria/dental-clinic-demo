@@ -3,25 +3,26 @@ import { CLINIC_DATA } from '../data/clinicData';
 import { 
   Phone, 
   MapPin, 
+  Clock, 
   Calendar, 
   Menu, 
   X, 
-  Clock, 
-  MessageCircle,
-  User,
   Sparkles,
-  Layers,
-  HelpCircle,
+  MessageCircle,
+  ChevronRight,
+  User,
   HeartHandshake,
   Star,
-  ChevronRight
+  Layers,
+  HelpCircle
 } from 'lucide-react';
 
 interface HeaderProps {
-  onOpenBooking: (serviceId?: string) => void;
+  onOpenBooking: () => void;
+  onDemoAction?: (msg?: string) => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
+export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onDemoAction }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -33,7 +34,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Prevent background scroll when mobile menu is open
+  // Lock body scroll when mobile menu is open
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = 'hidden';
@@ -94,8 +95,30 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
     setMobileMenuOpen(false);
   };
 
+  const handleCallClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (onDemoAction) {
+      onDemoAction('Calling functionality will be available on the official website after launch.');
+    }
+  };
+
+  const handleWhatsAppClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (onDemoAction) {
+      onDemoAction('This feature will be available on the official website after launch.');
+    }
+  };
+
   return (
     <>
+      {/* Professional Non-Intrusive Demo Notice Banner */}
+      <div className="bg-gradient-to-r from-gold-600 via-amber-500 to-gold-600 text-luxuryDark-950 text-[11px] sm:text-xs font-semibold py-1.5 px-4 text-center tracking-wide border-b border-gold-700/20 flex items-center justify-center gap-2 shadow-sm relative z-50">
+        <span className="w-2 h-2 rounded-full bg-luxuryDark-950 animate-pulse shrink-0"></span>
+        <span>
+          <strong className="font-extrabold uppercase tracking-wider">DEMO WEBSITE</strong> — Created exclusively as a website concept for Vrinda Dental Clinic
+        </span>
+      </div>
+
       {/* Top Luxury Announcement Ribbon */}
       <div className="bg-luxuryDark-950 text-sand-300 text-xs py-2 px-4 border-b border-white/5 relative z-40">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
@@ -112,13 +135,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
           </div>
 
           <div className="flex items-center gap-4 text-[11px] sm:text-xs">
-            <a 
-              href={`tel:${CLINIC_DATA.phones[0].replace(/\s+/g, '')}`} 
-              className="flex items-center gap-1.5 text-sand-200 hover:text-gold-300 transition-colors"
+            <button 
+              onClick={handleCallClick}
+              className="flex items-center gap-1.5 text-sand-200 hover:text-gold-300 transition-colors focus:outline-none"
             >
               <Phone className="w-3 h-3 text-gold-400" />
               <span>Call: <strong className="text-white font-semibold">{CLINIC_DATA.phones[0]}</strong></span>
-            </a>
+            </button>
             <span className="text-white/20">|</span>
             <span className="hidden sm:inline-flex items-center gap-1 text-sand-300">
               <Clock className="w-3 h-3 text-gold-400" />
@@ -172,15 +195,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
 
           {/* Desktop Action CTAs */}
           <div className="hidden sm:flex items-center gap-3">
-            <a
-              href={`https://wa.me/${CLINIC_DATA.whatsapp}?text=Hello%20Dr.%20Manju,%20I%20would%20like%20to%20inquire%20about%20a%20dental%20consultation%20at%20Vrinda%20Dental%20Clinic.`}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={handleWhatsAppClick}
               className="p-2.5 rounded-xl border border-sand-300/80 text-emerald-700 hover:bg-emerald-50 hover:border-emerald-300 transition-all flex items-center justify-center"
-              title="Chat on WhatsApp"
+              title="Chat on WhatsApp (Demo Mode)"
             >
               <MessageCircle className="w-5 h-5 text-emerald-600" />
-            </a>
+            </button>
 
             <button
               onClick={() => onOpenBooking()}
@@ -294,22 +315,26 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
 
               {/* Call & WhatsApp Dual Buttons */}
               <div className="grid grid-cols-2 gap-2">
-                <a
-                  href={`tel:${CLINIC_DATA.phones[0].replace(/\s+/g, '')}`}
+                <button
+                  onClick={(e) => {
+                    handleCallClick(e);
+                    setMobileMenuOpen(false);
+                  }}
                   className="py-2.5 px-3 rounded-xl bg-sand-100 hover:bg-sand-200 text-slate-900 font-bold text-xs flex items-center justify-center gap-1.5 border border-sand-300 active:scale-95"
                 >
                   <Phone className="w-3.5 h-3.5 text-slate-800" />
                   <span>Call Doctor</span>
-                </a>
-                <a
-                  href={`https://wa.me/${CLINIC_DATA.whatsapp}?text=Hello%20Dr.%20Manju,%20I%20would%20like%20to%20book%20an%20appointment%20at%20Vrinda%20Dental%20Clinic.`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                </button>
+                <button
+                  onClick={(e) => {
+                    handleWhatsAppClick(e);
+                    setMobileMenuOpen(false);
+                  }}
                   className="py-2.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm active:scale-95"
                 >
                   <MessageCircle className="w-3.5 h-3.5" />
                   <span>WhatsApp</span>
-                </a>
+                </button>
               </div>
 
               {/* Address Indicator */}

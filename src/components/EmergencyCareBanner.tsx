@@ -4,9 +4,10 @@ import { Zap, Phone, ArrowRight } from 'lucide-react';
 
 interface EmergencyCareBannerProps {
   onOpenBooking: (serviceId?: string) => void;
+  onDemoAction?: (msg?: string) => void;
 }
 
-export const EmergencyCareBanner: React.FC<EmergencyCareBannerProps> = ({ onOpenBooking }) => {
+export const EmergencyCareBanner: React.FC<EmergencyCareBannerProps> = ({ onOpenBooking, onDemoAction }) => {
   return (
     <section className="py-12 bg-gradient-to-r from-luxuryDark-950 via-luxuryDark-900 to-luxuryDark-950 text-white relative overflow-hidden border-y border-gold-500/20">
       
@@ -41,13 +42,17 @@ export const EmergencyCareBanner: React.FC<EmergencyCareBannerProps> = ({ onOpen
 
           {/* Right Direct Call & Booking CTAs */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full lg:w-auto">
-            <a
-              href={`tel:${CLINIC_DATA.phones[0].replace(/\s+/g, '')}`}
+            <button
+              onClick={() => {
+                if (onDemoAction) {
+                  onDemoAction('Calling functionality will be available on the official website after launch.');
+                }
+              }}
               className="px-6 py-3.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-sm shadow-lg hover:shadow-rose-600/30 transition-all flex items-center justify-center gap-2.5 shrink-0"
             >
               <Phone className="w-4 h-4 animate-bounce" />
               <span>Call Emergency: {CLINIC_DATA.phones[0]}</span>
-            </a>
+            </button>
 
             <button
               onClick={() => onOpenBooking('emergency-dental')}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { CLINIC_DATA, SERVICES_DATA } from '../data/clinicData';
+import { SERVICES_DATA } from '../data/clinicData';
 import confetti from 'canvas-confetti';
 import { 
   X, 
@@ -15,12 +15,14 @@ interface AppointmentModalProps {
   isOpen: boolean;
   onClose: () => void;
   preselectedServiceId?: string;
+  onDemoAction?: (msg?: string) => void;
 }
 
 export const AppointmentModal: React.FC<AppointmentModalProps> = ({
   isOpen,
   onClose,
-  preselectedServiceId
+  preselectedServiceId,
+  onDemoAction
 }) => {
   const [selectedService, setSelectedService] = useState<string>(preselectedServiceId || 'consultation');
   const [selectedDate, setSelectedDate] = useState<string>('');
@@ -78,11 +80,6 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
     if (selectedService === 'consultation') return 'General / First-Time Consultation';
     const s = SERVICES_DATA.find(srv => srv.id === selectedService);
     return s ? s.title : 'Dental Consultation';
-  };
-
-  const generateWhatsAppMessage = () => {
-    const text = `*New Appointment Request - Vrinda Dental Clinic*\n\n*Patient Name:* ${patientName}\n*Phone:* ${patientPhone}\n*Treatment:* ${getServiceName()}\n*Preferred Date:* ${selectedDate}\n*Time Slot:* ${selectedSlot}\n*Notes:* ${notes || 'None'}\n\n_Sent via Vrinda Dental Clinic Website_`;
-    return encodeURIComponent(text);
   };
 
   return (
@@ -283,17 +280,27 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
                 </div>
               </div>
 
+              {/* Demo Mode Notice Banner */}
+              <div className="p-3 rounded-xl bg-gold-50 border border-gold-200 text-xs text-gold-900 font-medium text-center">
+                ✨ <strong>Demo Presentation Mode:</strong> This feature will be available on the official website after launch.
+              </div>
+
               {/* Instant WhatsApp Handshake */}
-              <div className="space-y-2 pt-2">
-                <a
-                  href={`https://wa.me/${CLINIC_DATA.whatsapp}?text=${generateWhatsAppMessage()}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm shadow-md transition-colors flex items-center justify-center gap-2"
+              <div className="space-y-2 pt-1">
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (onDemoAction) {
+                      onDemoAction('This feature will be available on the official website after launch.');
+                    } else {
+                      alert('This feature will be available on the official website after launch.');
+                    }
+                  }}
+                  className="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm shadow-md transition-colors flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <MessageCircle className="w-4 h-4" />
                   <span>Send Confirmation to Clinic on WhatsApp</span>
-                </a>
+                </button>
 
                 <button
                   onClick={onClose}

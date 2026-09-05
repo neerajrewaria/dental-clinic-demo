@@ -13,10 +13,25 @@ import {
 
 interface LocationContactProps {
   onOpenBooking?: () => void;
+  onDemoAction?: (msg?: string) => void;
 }
 
-export const LocationContact: React.FC<LocationContactProps> = () => {
+export const LocationContact: React.FC<LocationContactProps> = ({ onDemoAction }) => {
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Vrinda Dental Clinic Mata Rd opposite to Mamta hospital Prem Nagar Sector 13 Gurugram Haryana 122001")}`;
+
+  const handleCallClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (onDemoAction) {
+      onDemoAction('Calling functionality will be available on the official website after launch.');
+    }
+  };
+
+  const handleWhatsAppClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (onDemoAction) {
+      onDemoAction('This feature will be available on the official website after launch.');
+    }
+  };
 
   return (
     <section id="location" className="py-16 md:py-24 bg-[#FAF8F5] relative">
@@ -71,17 +86,17 @@ export const LocationContact: React.FC<LocationContactProps> = () => {
                 </span>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {CLINIC_DATA.phones.map((phone, i) => (
-                    <a
+                    <button
                       key={i}
-                      href={`tel:${phone.replace(/\s+/g, '')}`}
-                      className="p-3 rounded-xl bg-white hover:bg-gold-50 border border-sand-200 hover:border-gold-300 text-slate-900 font-bold text-sm flex items-center justify-between transition-all group"
+                      onClick={handleCallClick}
+                      className="p-3 rounded-xl bg-white hover:bg-gold-50 border border-sand-200 hover:border-gold-300 text-slate-900 font-bold text-sm flex items-center justify-between transition-all group w-full"
                     >
                       <div className="flex items-center gap-2">
                         <Phone className="w-4 h-4 text-gold-600 group-hover:scale-110 transition-transform" />
                         <span>{phone}</span>
                       </div>
                       <span className="text-[10px] text-slate-400 group-hover:text-gold-700 font-normal">Call</span>
-                    </a>
+                    </button>
                   ))}
                 </div>
               </div>
@@ -138,15 +153,13 @@ export const LocationContact: React.FC<LocationContactProps> = () => {
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
 
-              <a
-                href={`https://wa.me/${CLINIC_DATA.whatsapp}?text=Hello%20Dr.%20Manju,%20I%20need%20assistance%20finding%20Vrinda%20Dental%20Clinic%20on%20Mata%20Road,%20Sector%2013.`}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={handleWhatsAppClick}
                 className="py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm transition-colors flex items-center justify-center gap-2"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>WhatsApp Clinic</span>
-              </a>
+              </button>
             </div>
           </div>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { DOCTOR_DATA, CLINIC_DATA } from '../data/clinicData';
+import { DOCTOR_DATA } from '../data/clinicData';
 import { 
   Award, 
   CheckCircle, 
@@ -12,9 +12,10 @@ import {
 
 interface DoctorSpotlightProps {
   onOpenBooking: () => void;
+  onDemoAction?: (msg?: string) => void;
 }
 
-export const DoctorSpotlight: React.FC<DoctorSpotlightProps> = ({ onOpenBooking }) => {
+export const DoctorSpotlight: React.FC<DoctorSpotlightProps> = ({ onOpenBooking, onDemoAction }) => {
   return (
     <section id="doctor" className="py-16 md:py-24 bg-[#FAF8F5] relative overflow-hidden">
       
@@ -128,13 +129,17 @@ export const DoctorSpotlight: React.FC<DoctorSpotlightProps> = ({ onOpenBooking 
                 <span>Schedule Consultation with Dr. Manju Sharma</span>
               </button>
 
-              <a
-                href={`tel:${CLINIC_DATA.phones[0].replace(/\s+/g, '')}`}
+              <button
+                onClick={() => {
+                  if (onDemoAction) {
+                    onDemoAction('Calling functionality will be available on the official website after launch.');
+                  }
+                }}
                 className="px-5 py-3.5 rounded-xl bg-white hover:bg-sand-100 text-slate-800 font-medium text-sm border border-sand-300 transition-colors flex items-center gap-2"
               >
                 <Phone className="w-4 h-4 text-slate-600" />
                 <span>Call Clinic Directly</span>
-              </a>
+              </button>
             </div>
 
           </div>

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { CLINIC_DATA } from '../data/clinicData';
 import { 
   Sparkles, 
   ArrowRight, 
@@ -12,9 +11,10 @@ import {
 
 interface SmileAssessmentQuizProps {
   onOpenBooking: (serviceId?: string) => void;
+  onDemoAction?: (msg?: string) => void;
 }
 
-export const SmileAssessmentQuiz: React.FC<SmileAssessmentQuizProps> = ({ onOpenBooking }) => {
+export const SmileAssessmentQuiz: React.FC<SmileAssessmentQuizProps> = ({ onOpenBooking, onDemoAction }) => {
   const [currentStep, setCurrentStep] = useState<number>(1);
   const [answers, setAnswers] = useState<{
     goal: string;
@@ -307,15 +307,17 @@ export const SmileAssessmentQuiz: React.FC<SmileAssessmentQuizProps> = ({ onOpen
                   <span>Confirm Priority Consultation Slot</span>
                 </button>
 
-                <a
-                  href={`https://wa.me/${CLINIC_DATA.whatsapp}?text=Hi%20Dr.%20Manju,%20I%20completed%20the%20Smile%20Assessment%20on%20your%20website.%20My%20recommended%20treatment%20is:%20${encodeURIComponent(rec.title)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  onClick={() => {
+                    if (onDemoAction) {
+                      onDemoAction('This feature will be available on the official website after launch.');
+                    }
+                  }}
                   className="py-3.5 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-md transition-colors flex items-center justify-center gap-2"
                 >
                   <MessageCircle className="w-4 h-4" />
                   <span>Send via WhatsApp</span>
-                </a>
+                </button>
               </div>
 
               <div className="mt-4 text-center">
