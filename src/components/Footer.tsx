@@ -42,34 +42,34 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onDemoAction }) =
               <div className="w-11 h-11 rounded-2xl bg-white p-1.5 shadow-lg border border-white/20 flex items-center justify-center shrink-0 overflow-hidden">
                 <img 
                   src="/logo.png" 
-                  alt="Vrinda Dental Clinic Official Logo" 
+                  alt="Dr Kiruthika Asokan's Dental Clinic Official Logo" 
                   className="w-full h-full object-contain"
                 />
               </div>
               <div>
-                <span className="font-serif text-xl font-bold tracking-tight text-white block leading-tight">
-                  VRINDA DENTAL CLINIC
+                <span className="font-serif text-base font-bold tracking-tight text-white block leading-tight">
+                  DR KIRUTHIKA ASOKAN'S
                 </span>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-gold-400 font-semibold">
-                  Orthodontic & Implant Centre
+                <span className="text-[10px] uppercase tracking-[0.15em] text-gold-400 font-semibold">
+                  DENTAL CLINIC • PORUR, CHENNAI
                 </span>
               </div>
             </div>
 
             <p className="text-sand-300 text-xs sm:text-sm leading-relaxed">
-              Spearheaded by <strong className="text-white">{DOCTOR_DATA.name}</strong>, Vrinda Dental Clinic delivers bespoke, painless cosmetic dentistry, single-sitting rotary RCTs, Swiss dental implants, and clear aligners in a soothing, sterile environment.
+              Spearheaded by <strong className="text-white">{DOCTOR_DATA.name}</strong>, Dr Kiruthika Asokan's Dental Clinic delivers specialized Orthodontics, painless Root Canal Treatments (RCT), and computer-guided Dental Implants in a soothing, sterile environment.
             </p>
 
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-sand-300">
               <Heart className="w-3.5 h-3.5 text-rose-400 fill-rose-400" />
-              <span>Proudly Women-Owned & Patient-First</span>
+              <span>Proudly Women-Led & Patient-First</span>
             </div>
           </div>
 
           {/* Treatments Navigation (Col 3) */}
           <div className="lg:col-span-3 space-y-3">
             <h4 className="text-xs uppercase font-bold tracking-widest text-gold-400">
-              Clinical Procedures
+              Clinical Specializations
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm text-sand-300">
               {SERVICES_DATA.slice(0, 6).map((service) => (
@@ -94,17 +94,16 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onDemoAction }) =
             <div className="space-y-2 text-xs sm:text-sm text-sand-300">
               <div>
                 <strong className="text-white block font-medium">Mon – Sat:</strong>
-                <span>10:00 AM – 8:00 PM</span>
+                <span>10:00 AM – 8:30 PM</span>
               </div>
               <div>
                 <strong className="text-white block font-medium">Sunday:</strong>
-                <span>10:30 AM – 2:00 PM</span>
-                <span className="text-[11px] text-gold-400 block">(By Prior Appointment)</span>
+                <span>By Prior Appointment</span>
               </div>
               <div className="pt-2">
                 <span className="inline-flex items-center gap-1 text-emerald-400 text-xs font-semibold">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
-                  Emergency On-Call
+                  Emergency Consultations
                 </span>
               </div>
             </div>
@@ -113,7 +112,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onDemoAction }) =
           {/* Location & Quick Contact (Col 3) */}
           <div className="lg:col-span-3 space-y-3">
             <h4 className="text-xs uppercase font-bold tracking-widest text-gold-400">
-              Gurugram Location
+              Porur, Chennai Location
             </h4>
             
             <div className="space-y-2.5 text-xs sm:text-sm text-sand-300">
@@ -160,10 +159,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onDemoAction }) =
               </p>
             </div>
             <p className="text-[11px] text-sand-400 leading-relaxed">
-              This is a demonstration website concept and is not the official website of Vrinda Dental Clinic.
+              This is a demonstration website concept and is not the official website of Dr Kiruthika Asokan's Dental Clinic.
             </p>
             <p className="text-[10px] text-sand-500">
-              © {new Date().getFullYear()} Vrinda Dental Clinic Orthodontic and Implant Centre, Gurugram. All concept and design presentation rights reserved.
+              © {new Date().getFullYear()} Dr Kiruthika Asokan's Dental Clinic, Porur, Chennai. All concept and design presentation rights reserved.
             </p>
           </div>
 

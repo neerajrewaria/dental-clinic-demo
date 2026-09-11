@@ -71,7 +71,7 @@ export const App: React.FC = () => {
         {/* 2. Trust Stats & Amenities */}
         <TrustStats />
 
-        {/* 3. Meet Dr. Manju Sharma */}
+        {/* 3. Meet Dr. Kiruthika Asokan */}
         <DoctorSpotlight 
           onOpenBooking={() => handleOpenBooking()} 
           onDemoAction={handleDemoAction}

@@ -36,11 +36,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onDemoAction }) => {
             <div className="inline-flex flex-wrap items-center gap-2 mb-4">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white text-luxuryDark-900 border border-sand-300 text-xs font-semibold shadow-sm">
                 <Sparkles className="w-3.5 h-3.5 text-gold-500" />
-                <span>Sector 13, Gurgaon’s Premier Dental Practice</span>
+                <span>Porur, Chennai’s Premier Dental Practice</span>
               </span>
               <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-rose-50 text-rose-800 border border-rose-200/80 text-xs font-semibold">
                 <Heart className="w-3 h-3 text-rose-500 fill-rose-500" />
-                <span>Women-Owned Practice</span>
+                <span>Women-Led Practice</span>
               </span>
             </div>
 
@@ -52,22 +52,22 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onDemoAction }) => {
 
             {/* Concise, Human Philosophy */}
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mb-6">
-              Welcome to <strong className="text-slate-900 font-semibold">{CLINIC_DATA.name}</strong>, led by <strong className="text-slate-900 font-semibold">{DOCTOR_DATA.name}</strong>. We blend gentle, pain-free artistry with precision dental science—delivering personalized cosmetic makeovers, single-sitting RCTs, and Swiss-grade implants in a serene, anxiety-free setting.
+              Welcome to <strong className="text-slate-900 font-semibold">{CLINIC_DATA.name}</strong>, led by <strong className="text-slate-900 font-semibold">{DOCTOR_DATA.name}</strong>. We blend gentle, pain-free care with high-precision dental expertise—specializing in Orthodontics, painless Root Canal Treatments (RCT), and computer-guided Dental Implants in a calm, welcoming environment.
             </p>
 
             {/* Key Clinical Pillars Checklist */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 w-full max-w-xl mb-8 text-xs sm:text-sm text-slate-700 font-medium">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                <span>100% Painless Rotary Endodontics (RCT)</span>
+                <span>Specialized Orthodontics & Clear Aligners</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                <span>Custom Clear Aligners & Smile Design</span>
+                <span>100% Painless Rotary Root Canal Therapy</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                <span>Zero-Wait Dedicated Consultations</span>
+                <span>Precision Bio-Compatible Dental Implants</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -91,7 +91,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onDemoAction }) => {
                 href="#treatments"
                 className="px-6 py-4 rounded-2xl bg-white hover:bg-sand-100 text-slate-800 font-semibold text-sm sm:text-base border border-sand-300 shadow-sm hover:shadow transition-all flex items-center justify-center gap-2"
               >
-                <span>Explore Treatments</span>
+                <span>Explore Specializations</span>
               </a>
             </div>
 
@@ -100,7 +100,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onDemoAction }) => {
               <div className="flex -space-x-2">
                 {['bg-amber-600', 'bg-emerald-600', 'bg-teal-600', 'bg-blue-600'].map((bg, idx) => (
                   <div key={idx} className={`w-8 h-8 rounded-full ${bg} border-2 border-white flex items-center justify-center text-white text-[10px] font-bold shadow-sm`}>
-                    {['PS', 'RK', 'AM', 'SV'][idx]}
+                    {['KS', 'RK', 'DR', 'SN'][idx]}
                   </div>
                 ))}
               </div>
@@ -109,10 +109,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onDemoAction }) => {
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-3.5 h-3.5 fill-gold-500 text-gold-500" />
                   ))}
-                  <span className="font-bold text-slate-900 text-xs ml-1">4.9 / 5.0</span>
+                  <span className="font-bold text-slate-900 text-xs ml-1">5.0 / 5.0</span>
                 </div>
                 <span className="text-xs text-slate-500">
-                  Trusted by <strong>1,200+ Gurugram Families</strong> • Google Verified Reviews
+                  Rated <strong>5.0 ★ on Google (139 Reviews)</strong> • Porur, Chennai
                 </span>
               </div>
             </div>
@@ -126,8 +126,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onDemoAction }) => {
               {/* Main Visual Frame */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-sand-100 aspect-[4/5] group">
                 <img 
-                  src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1000" 
-                  alt="Vrinda Dental Clinic - Dr. Manju Sharma Consulting Room" 
+                  src={DOCTOR_DATA.image} 
+                  alt="Dr Kiruthika Asokan - Founder & Chief Dental Surgeon" 
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "/doctor-image.png";
+                  }}
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 />
                 
@@ -146,7 +149,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onDemoAction }) => {
                         {DOCTOR_DATA.name}
                       </h3>
                       <p className="text-sand-300 text-xs mt-0.5 font-sans">
-                        BDS • Aesthetic & Rotary Endodontics Specialist
+                        BDS • Orthodontics, RCT & Implant Specialist
                       </p>
                     </div>
 

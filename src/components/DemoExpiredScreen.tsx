@@ -22,7 +22,7 @@ export const DemoExpiredScreen: React.FC = () => {
           <div className="w-10 h-10 rounded-xl bg-white/10 p-1.5 border border-white/15 backdrop-blur-md shadow-lg flex items-center justify-center shrink-0 overflow-hidden">
             <img 
               src="/logo.png" 
-              alt="Vrinda Dental Clinic Logo" 
+              alt="Dr Kiruthika Asokan's Dental Clinic Logo" 
               className="w-full h-full object-contain"
             />
           </div>

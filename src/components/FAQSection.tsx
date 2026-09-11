@@ -41,7 +41,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onDemoAction }) => {
             Frequently Asked Questions
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-2">
-            Transparent answers to help you prepare for your visit to Vrinda Dental Clinic.
+            Transparent answers to help you prepare for your visit to Dr Kiruthika Asokan's Dental Clinic.
           </p>
         </div>
 
@@ -82,7 +82,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onDemoAction }) => {
               Have a specific question about your dental concern?
             </h4>
             <p className="text-xs text-slate-500 mt-0.5">
-              Speak directly with our clinic coordinator or message Dr. Manju Sharma.
+              Speak directly with our clinic coordinator or message Dr. Kiruthika Asokan.
             </p>
           </div>
 

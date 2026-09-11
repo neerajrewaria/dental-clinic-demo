@@ -49,13 +49,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onDemoAction }) =
   const navItems = [
     { 
       name: 'About Doctor', 
-      subtitle: 'Dr. Manju Sharma & Philosophy', 
+      subtitle: 'Dr. Kiruthika Asokan & Philosophy', 
       href: '#doctor',
       icon: <User className="w-5 h-5 text-gold-600" />
     },
     { 
-      name: 'Treatments & Procedures', 
-      subtitle: 'Rotary RCT, Implants, Aligners & Veneers', 
+      name: 'Treatments & Specializations', 
+      subtitle: 'Orthodontics, Painless RCT & Dental Implants', 
       href: '#treatments',
       icon: <Sparkles className="w-5 h-5 text-gold-600" />
     },
@@ -79,13 +79,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onDemoAction }) =
     },
     { 
       name: 'Patient Reviews', 
-      subtitle: '4.9★ Google Ratings from Gurgaon', 
+      subtitle: '5.0★ Google Ratings (139 Reviews)', 
       href: '#reviews',
       icon: <Star className="w-5 h-5 text-gold-600" />
     },
     { 
       name: 'Location & Hours', 
-      subtitle: 'Mata Rd, Opp. Mamta Hospital, Sector 13', 
+      subtitle: 'Behind Grand Residence, Karambakkam, Porur', 
       href: '#location',
       icon: <MapPin className="w-5 h-5 text-gold-600" />
     },
@@ -115,7 +115,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onDemoAction }) =
       <div className="bg-gradient-to-r from-gold-600 via-amber-500 to-gold-600 text-luxuryDark-950 text-[11px] sm:text-xs font-semibold py-1.5 px-4 text-center tracking-wide border-b border-gold-700/20 flex items-center justify-center gap-2 shadow-sm relative z-50">
         <span className="w-2 h-2 rounded-full bg-luxuryDark-950 animate-pulse shrink-0"></span>
         <span>
-          <strong className="font-extrabold uppercase tracking-wider">DEMO WEBSITE</strong> — Created exclusively as a website concept for Vrinda Dental Clinic
+          <strong className="font-extrabold uppercase tracking-wider">DEMO WEBSITE</strong> — Created exclusively as a website concept for {CLINIC_DATA.name}
         </span>
       </div>
 
@@ -130,7 +130,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onDemoAction }) =
             <span className="hidden md:inline-block text-sand-400">|</span>
             <span className="hidden md:inline-flex items-center gap-1 text-sand-300">
               <MapPin className="w-3.5 h-3.5 text-gold-400" />
-              Mata Rd, Opp. Mamta Hospital, Sector 13, Gurugram
+              Behind Grand Residence, Karambakkam, Porur, Chennai
             </span>
           </div>
 
@@ -145,7 +145,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onDemoAction }) =
             <span className="text-white/20">|</span>
             <span className="hidden sm:inline-flex items-center gap-1 text-sand-300">
               <Clock className="w-3 h-3 text-gold-400" />
-              10:00 AM – 8:00 PM
+              10:00 AM – 8:30 PM
             </span>
           </div>
         </div>
@@ -166,16 +166,16 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onDemoAction }) =
             <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-white p-1.5 shadow-md border border-sand-200/90 group-hover:scale-105 transition-transform flex items-center justify-center shrink-0 overflow-hidden">
               <img 
                 src="/logo.png" 
-                alt="Vrinda Dental Clinic Official Logo" 
+                alt="Dr Kiruthika Asokan's Dental Clinic Logo" 
                 className="w-full h-full object-contain"
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-serif text-lg sm:text-xl font-bold tracking-tight text-luxuryDark-950 leading-tight">
-                VRINDA DENTAL CLINIC
+              <span className="font-serif text-base sm:text-lg font-bold tracking-tight text-luxuryDark-950 leading-tight">
+                DR KIRUTHIKA ASOKAN'S
               </span>
-              <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.18em] text-gold-700 font-semibold flex items-center gap-1">
-                Dr. Manju Sharma <span className="text-sand-400">•</span> Gurugram
+              <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.15em] text-gold-700 font-semibold flex items-center gap-1">
+                DENTAL CLINIC <span className="text-sand-400">•</span> PORUR, CHENNAI
               </span>
             </div>
           </a>
@@ -248,11 +248,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onDemoAction }) =
                   <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
                 </div>
                 <div>
-                  <h3 className="font-serif text-base font-bold text-luxuryDark-950 leading-tight">
-                    VRINDA DENTAL CLINIC
+                  <h3 className="font-serif text-sm font-bold text-luxuryDark-950 leading-tight">
+                    DR KIRUTHIKA ASOKAN'S DENTAL CLINIC
                   </h3>
                   <span className="text-[10px] uppercase font-bold tracking-wider text-gold-700">
-                    Dr. Manju Sharma • Sector 13
+                    Dr. Kiruthika Asokan • Porur, Chennai
                   </span>
                 </div>
               </div>
@@ -340,7 +340,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, onDemoAction }) =
               {/* Address Indicator */}
               <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-sand-50 border border-sand-200 text-[11px] text-slate-600">
                 <MapPin className="w-3.5 h-3.5 text-gold-600 shrink-0" />
-                <span className="truncate">Mata Rd, Opp. Mamta Hospital, Sector 13, Gurugram</span>
+                <span className="truncate">Behind Grand Residence, Karambakkam, Porur, Chennai</span>
               </div>
 
             </div>

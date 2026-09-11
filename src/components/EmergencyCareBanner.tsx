@@ -35,7 +35,7 @@ export const EmergencyCareBanner: React.FC<EmergencyCareBannerProps> = ({ onOpen
                 Severe Tooth Pain or Dental Trauma?
               </h3>
               <p className="text-sand-300 text-xs sm:text-sm mt-1 max-w-xl">
-                Don’t wait through unbearable pain. Dr. Manju Sharma provides immediate emergency toothache relief, broken crown repair, and single-sitting urgent RCT in Sector 13 Gurgaon.
+                Don’t wait through unbearable pain. Dr. Kiruthika Asokan provides immediate emergency toothache relief, broken crown repair, and urgent RCT in Porur, Chennai.
               </p>
             </div>
           </div>

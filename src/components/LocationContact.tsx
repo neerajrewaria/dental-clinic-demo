@@ -17,7 +17,7 @@ interface LocationContactProps {
 }
 
 export const LocationContact: React.FC<LocationContactProps> = ({ onDemoAction }) => {
-  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Vrinda Dental Clinic Mata Rd opposite to Mamta hospital Prem Nagar Sector 13 Gurugram Haryana 122001")}`;
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Dr Kiruthika Asokan's Dental Clinic 71-A 1st St behind Grand Residence Karambakkam Rajeswari Nagar Porur Chennai Tamil Nadu 600116")}`;
 
   const handleCallClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -41,13 +41,13 @@ export const LocationContact: React.FC<LocationContactProps> = ({ onDemoAction }
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="text-xs uppercase font-bold tracking-widest text-gold-700 mb-2 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold-100/60 border border-gold-200">
             <MapPin className="w-3.5 h-3.5 text-gold-600" />
-            <span>Visit Us in Sector 13, Gurugram</span>
+            <span>Visit Us in Porur, Chennai</span>
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-luxuryDark-950 mt-2">
             Prime Location & Hours
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-2">
-            Conveniently situated on Mata Road opposite Mamta Hospital with easy on-site parking and ground accessibility.
+            Conveniently situated behind Grand Residence in Karambakkam, Porur with easy on-site parking and ground-level accessibility.
           </p>
         </div>
 
@@ -126,7 +126,7 @@ export const LocationContact: React.FC<LocationContactProps> = ({ onDemoAction }
               <div className="flex flex-wrap gap-2 pt-2">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sand-100 text-slate-700 text-xs font-semibold">
                   <Car className="w-3.5 h-3.5 text-gold-600" />
-                  On-Site Parking Available
+                  Easy Parking Available
                 </span>
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sand-100 text-slate-700 text-xs font-semibold">
                   <Accessibility className="w-3.5 h-3.5 text-emerald-600" />
@@ -134,7 +134,7 @@ export const LocationContact: React.FC<LocationContactProps> = ({ onDemoAction }
                 </span>
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-50 text-rose-800 text-xs font-semibold border border-rose-200/60">
                   <Sparkles className="w-3.5 h-3.5 text-rose-500" />
-                  Women-Owned Practice
+                  Women-Led Practice
                 </span>
               </div>
 
@@ -168,8 +168,8 @@ export const LocationContact: React.FC<LocationContactProps> = ({ onDemoAction }
             
             {/* Embedded Live Google Maps Iframe */}
             <iframe
-              title="Vrinda Dental Clinic Mata Road Sector 13 Gurugram Map Location"
-              src="https://maps.google.com/maps?q=Vrinda+Dental+Clinic+Mata+Rd+opposite+Mamta+hospital+Prem+Nagar+Sector+13+Gurugram+Haryana+122001&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              title="Dr Kiruthika Asokan's Dental Clinic Porur Chennai Map Location"
+              src="https://maps.google.com/maps?q=71-A+1st+St+behind+Grand+Residence+Karambakkam+Rajeswari+Nagar+Porur+Chennai+Tamil+Nadu+600116&t=&z=16&ie=UTF8&iwloc=&output=embed"
               className="w-full h-full min-h-[360px] border-0"
               allowFullScreen={false}
               loading="lazy"
@@ -180,13 +180,13 @@ export const LocationContact: React.FC<LocationContactProps> = ({ onDemoAction }
             <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl glass-dark text-white border border-white/10 flex items-center justify-between">
               <div>
                 <p className="text-xs font-bold text-gold-400 uppercase tracking-wider">
-                  Gurugram Prime Location
+                  Porur, Chennai Location
                 </p>
                 <p className="font-serif text-sm font-bold text-white">
-                  Mata Rd, Opp. Mamta Hospital, Sector 13
+                  Behind Grand Residence, Karambakkam
                 </p>
                 <p className="text-[11px] text-sand-300">
-                  Prem Nagar • Plus Code: F29M+RM Gurugram
+                  Rajeswari Nagar, Porur, Chennai 600116
                 </p>
               </div>
 

@@ -20,10 +20,10 @@ export const TrustStats: React.FC = () => {
   };
 
   const statCounters = [
-    { value: '10+', label: 'Years Clinical Experience', sub: 'Dr. Manju Sharma' },
-    { value: '1,200+', label: 'Gurugram Smiles Transformed', sub: 'Sector 13 & Beyond' },
-    { value: '100%', label: 'Painless Gentle Protocol', sub: 'Rotary Single-Sitting RCT' },
-    { value: '4.9★', label: 'Google Patient Rating', sub: 'Verified Local Trust' },
+    { value: '5.0★', label: 'Google Patient Rating', sub: '139 Verified Reviews' },
+    { value: '139+', label: 'Happy Patient Reviews', sub: 'Porur, Chennai & Beyond' },
+    { value: '100%', label: 'Painless Gentle Protocol', sub: 'Orthodontics, RCT & Implants' },
+    { value: '100%', label: 'Transparent Ethical Care', sub: 'Dr. Kiruthika Asokan' },
   ];
 
   return (
@@ -47,7 +47,7 @@ export const TrustStats: React.FC = () => {
           ))}
         </div>
 
-        {/* Why Patients Choose Vrinda Dental Clinic - Amenity Cards */}
+        {/* Why Patients Choose Dr Kiruthika Asokan's Dental Clinic - Amenity Cards */}
         <div className="pt-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
             <div>
@@ -60,7 +60,7 @@ export const TrustStats: React.FC = () => {
               </h2>
             </div>
             <p className="text-sm text-slate-600 max-w-md">
-              Every detail at Vrinda Dental Clinic—from convenient parking on Mata Road opposite Mamta Hospital to hospital-grade sterilization—is designed around your peace of mind.
+              Every detail at Dr Kiruthika Asokan's Dental Clinic—from convenient location behind Grand Residence in Karambakkam, Porur to hospital-grade sterilization—is designed around your peace of mind.
             </p>
           </div>
 

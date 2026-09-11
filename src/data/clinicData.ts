@@ -1,41 +1,41 @@
 import { ClinicMeta, DoctorInfo, ServiceItem, Testimonial, BeforeAfterCase, FAQItem } from '../types';
 
 export const CLINIC_DATA: ClinicMeta = {
-  name: "Vrinda Dental Clinic",
-  tagline: "Orthodontic and Implant Centre • Gurugram",
-  doctor: "Dr. Manju Sharma",
+  name: "Dr Kiruthika Asokan's Dental Clinic",
+  tagline: "Orthodontics, Root Canal Treatment (RCT) & Dental Implants • Porur, Chennai",
+  doctor: "Dr. Kiruthika Asokan",
   address: {
-    line1: "On, Mata Rd, Opposite to Mamta Hospital",
-    line2: "Prem Nagar, Sector 13",
-    area: "Sector 13, Prem Nagar",
-    city: "Gurugram, Haryana",
-    pincode: "122001",
-    full: "Vrinda Dental Clinic, On Mata Rd, opposite to Mamta hospital, Prem Nagar, Sector 13, Gurugram, Haryana 122001",
-    landmark: "Opposite to Mamta Hospital, Mata Road, Prem Nagar (Plus Code: F29M+RM Gurugram)"
+    line1: "71-A, 1st St, behind Grand Residence",
+    line2: "Karambakkam, Rajeswari Nagar",
+    area: "Porur",
+    city: "Chennai, Tamil Nadu",
+    pincode: "600116",
+    full: "71-A, 1st St, behind Grand Residence, Karambakkam, Rajeswari Nagar, Porur, Chennai, Tamil Nadu 600116",
+    landmark: "Behind Grand Residence, 1st Street, Karambakkam, Porur"
   },
-  phones: ["087000 39261"],
-  whatsapp: "918700039261",
-  email: "care@vrindadentalclinic.com",
+  phones: ["091713 33368"],
+  whatsapp: "91917133368",
+  email: "care@drkiruthikadental.com",
   timings: {
-    days: "Monday – Saturday: 10:00 AM – 8:00 PM",
-    hours: "10:00 AM – 8:00 PM",
-    sunday: "Sunday: 10:30 AM – 2:00 PM (By Prior Appointment)",
-    emergency: "24/7 Dental Emergency On-Call Assistance"
+    days: "Monday – Saturday: 10:00 AM – 8:30 PM",
+    hours: "10:00 AM – 8:30 PM",
+    sunday: "Sunday: By Prior Appointment",
+    emergency: "24/7 Urgent Dental Consultation"
   },
   amenities: [
     {
-      title: "Women-Owned Practice",
-      desc: "Compassionate, gentle touch and meticulous aesthetic precision spearheaded by Dr. Manju Sharma.",
+      title: "Women-Led Practice",
+      desc: "Compassionate, gentle care and meticulous dental precision spearheaded by Dr. Kiruthika Asokan.",
       icon: "HeartHandshake"
     },
     {
-      title: "On-Site Easy Parking",
-      desc: "Hassle-free parking directly on Mata Road near Mamta Hospital with smooth accessibility.",
+      title: "Easy Parking & Access",
+      desc: "Convenient location behind Grand Residence in Karambakkam, Porur with hassle-free parking.",
       icon: "Car"
     },
     {
       title: "Wheelchair Accessible",
-      desc: "Barrier-free ground access with dedicated assistance for comfortable patient mobility.",
+      desc: "Barrier-free ground access with dedicated patient assistance for smooth mobility.",
       icon: "Accessibility"
     },
     {
@@ -49,73 +49,92 @@ export const CLINIC_DATA: ClinicMeta = {
       icon: "Clock"
     },
     {
-      title: "Hygienic Modern Restrooms",
-      desc: "Immaculately maintained private sanitation and refreshment amenities for patient comfort.",
+      title: "Modern Hygienic Clinic",
+      desc: "Immaculately maintained private sanitation and comfortable patient care amenities.",
       icon: "Sparkles"
     }
   ]
 };
 
 export const DOCTOR_DATA: DoctorInfo = {
-  name: "Dr. Manju Sharma",
-  title: "BDS | Dental Surgeon, Orthodontic & Implant Specialist",
+  name: "Dr. Kiruthika Asokan",
+  title: "BDS | Dental Surgeon, Orthodontics, RCT & Implant Specialist",
   clinicRole: "Founder & Chief Dental Surgeon",
-  experience: "10+ Years of Clinical Excellence",
+  experience: "5.0 ★ Google Rated Specialist (139 Reviews)",
   qualifications: [
     "Bachelor of Dental Surgery (BDS)",
-    "Advanced Certificate in Orthodontics & Clear Aligners",
+    "Specialist Training in Orthodontics & Clear Aligners",
     "Certified Rotary Endodontics & Single-Sitting RCT Specialist",
-    "Fellowship in Modern Implantology & Digital Smile Design"
+    "Advanced Certificate in Implantology & Restorative Dentistry"
   ],
-  philosophy: "We believe dentistry should never feel intimidating. True dental excellence is a harmony between precision clinical science, artistic beauty, and a gentle, compassionate human touch that preserves your natural teeth first.",
+  philosophy: "We believe dentistry should be compassionate, gentle, and transparent. Our priority is to preserve natural teeth while delivering world-class orthodontic alignment, painless root canal treatments, and long-lasting dental implants in Porur, Chennai.",
   specialties: [
-    "Painless Rotary Root Canal Treatments",
-    "Precision Dental Implant Restorations",
-    "Clear Invisible Aligners & Orthodontic Correction",
-    "Micro-Aesthetic Smile Makeovers & Porcelain Veneers",
-    "Pediatric & Child-Friendly Dental Care"
+    "Orthodontics & Clear Aligners",
+    "Painless Rotary Root Canal Treatment (RCT)",
+    "Precision Dental Implants & Crowns",
+    "Cosmetic Smile Design & Whitening",
+    "Preventive & Pediatric Dental Care"
   ],
   bio: [
-    "Dr. Manju Sharma is a distinguished Dental Surgeon recognized across Gurugram for her meticulous clinical standards, gentle demeanor, and artistic precision in orthodontic and restorative dentistry.",
-    "With over a decade of hands-on surgical, orthodontic, and cosmetic experience, Dr. Manju Sharma has transformed thousands of smiles—championing conservative dentistry where saving the natural tooth structure is always prioritized over aggressive interventions.",
-    "As the visionary leader of Vrinda Dental Clinic Orthodontic and Implant Centre on Mata Road, Sector 13, she has curated an atmosphere where dental anxiety dissolves, replacing sterile clinical coldness with warm, attentive patient care supported by state-of-the-art diagnostic technology."
+    "Dr. Kiruthika Asokan is a highly respected Dental Surgeon in Porur, Chennai, renowned for her gentle clinical demeanor, ethical practice, and exceptional success in orthodontics, root canal treatments, and implants.",
+    "With a 5.0 ★ Google rating backed by 139+ verified patient reviews, Dr. Kiruthika Asokan prioritizes conservative dentistry—focusing on saving natural tooth structures and providing pain-free treatments.",
+    "At Dr Kiruthika Asokan's Dental Clinic behind Grand Residence in Karambakkam, Porur, she has curated a warm, sterile, and patient-first environment where every dental procedure is conducted with complete clarity and care."
   ],
-  image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=1000"
+  image: "/doctor-image.png"
 };
 
 export const SERVICES_DATA: ServiceItem[] = [
   {
-    id: "cosmetic-dentistry",
-    title: "Cosmetic Dentistry & Smile Design",
-    subtitle: "Artisan smile makeovers tailored to your facial harmony",
-    category: "cosmetic",
-    description: "Re-sculpt and brighten your smile with bespoke porcelain veneers, composite bonding, and in-office LED laser teeth whitening. Engineered to mirror the natural translucency and luminescence of healthy enamel.",
+    id: "orthodontics",
+    title: "Orthodontics & Clear Aligners",
+    subtitle: "Teeth alignment, metal/ceramic braces & invisible aligners",
+    category: "aligners",
+    description: "Expert orthodontic solutions for children and adults. Correct misaligned teeth, gaps, and bite issues with modern braces and transparent clear aligners.",
     benefits: [
-      "Custom Digital Smile Designing (DSD) preview",
-      "Ultra-thin durable E-max porcelain veneers",
-      "Up to 8 shades lighter in a single 45-minute laser session",
-      "Non-invasive enamel preservation technique"
+      "Specialized orthodontic treatment planning",
+      "Tooth-colored ceramic & discreet metal braces",
+      "Custom 3D transparent invisible aligners",
+      "Improves long-term biting & facial symmetry"
     ],
-    duration: "1 - 2 Visits",
+    duration: "6 - 14 Months",
+    painLevel: "Gentle Care",
+    idealFor: "Crooked teeth, gaps, crowding, overbites & underbites",
+    iconName: "Smile",
+    image: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=900",
+    featured: true
+  },
+  {
+    id: "root-canal-treatment",
+    title: "Root Canal Treatment (RCT)",
+    subtitle: "Painless rotary RCT preserving your natural tooth",
+    category: "rct",
+    description: "Experience modern painless rotary endodontics. Eradicate deep tooth infections, relieve severe pain, and protect your natural tooth structure.",
+    benefits: [
+      "Painless procedure under localized anesthesia",
+      "Single-sitting rotary endodontics",
+      "Hermetic 3D sealing preventing re-infection",
+      "Protected with high-strength ceramic crown"
+    ],
+    duration: "40 - 50 Minutes",
     painLevel: "Painless / Zero Discomfort",
-    idealFor: "Stained, chipped, misaligned, or unevenly spaced teeth",
-    iconName: "Sparkles",
-    image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=900",
+    idealFor: "Severe toothache, deep decay, nerve infection, thermal sensitivity",
+    iconName: "ShieldAlert",
+    image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=900",
     featured: true
   },
   {
     id: "dental-implants",
-    title: "Precision Dental Implants",
+    title: "Dental Implants & Tooth Replacement",
     subtitle: "Permanent, bio-compatible replacements for missing teeth",
     category: "implants",
-    description: "Restore 100% natural chewing strength and jawbone integrity with premium grade titanium implants. Look, feel, and function just like your natural teeth for a lifetime of confidence.",
+    description: "Restore 100% natural chewing strength and jawbone health with premium dental implants. Look, feel, and function just like natural teeth.",
     benefits: [
-      "Computer-guided surgical placement for supreme accuracy",
-      "Lifetime durability with Swiss & German implant systems",
-      "Prevents bone recession & preserves youthful facial structure",
-      "Natural shade matching with CAD/CAM zirconia crowns"
+      "Computer-guided precision implant placement",
+      "Bio-compatible titanium root replacement",
+      "Prevents facial bone recession",
+      "Natural shade-matched CAD/CAM crowns"
     ],
-    duration: "2 - 3 Planned Phases",
+    duration: "Planned Phases",
     painLevel: "Minimal (Local Anesthesia)",
     idealFor: "Single or multiple missing teeth, loose dentures",
     iconName: "Anchor",
@@ -123,266 +142,177 @@ export const SERVICES_DATA: ServiceItem[] = [
     featured: true
   },
   {
-    id: "root-canal-treatment",
-    title: "Single-Sitting Rotary RCT",
-    subtitle: "Painless infected pulp therapy to save your natural tooth",
-    category: "rct",
-    description: "Experience modern painless endodontics. Utilizing computer-controlled rotary files and apex locators, Dr. Manju Sharma eradicates deep nerve infections in a quiet, relaxed single appointment.",
+    id: "cosmetic-dentistry",
+    title: "Cosmetic Dentistry & Smile Design",
+    subtitle: "Bespoke smile makeovers tailored to your features",
+    category: "cosmetic",
+    description: "Enhance your smile with teeth whitening, composite bonding, and ceramic veneers. Designed to reflect natural translucency and luminescence.",
     benefits: [
-      "99% completed in a single comfortable 40-minute sitting",
-      "Advanced localized numbing ensures zero pain during procedure",
-      "Hermetic 3D root canal sealing prevents re-infection",
-      "Protected with high-strength monolithic zirconia ceramic crowns"
+      "Digital smile designing preview",
+      "In-office teeth whitening laser treatment",
+      "Stain-resistant porcelain veneers",
+      "Non-invasive enamel preservation"
     ],
-    duration: "40 - 50 Minutes",
+    duration: "1 - 2 Visits",
     painLevel: "Painless / Zero Discomfort",
-    idealFor: "Severe toothache, deep cavities, sensitivity to hot/cold, pulp trauma",
-    iconName: "ShieldAlert",
-    image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=900",
+    idealFor: "Discolored, chipped, uneven, or spaced teeth",
+    iconName: "Sparkles",
+    image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=900",
     featured: true
   },
   {
-    id: "invisible-aligners",
-    title: "Clear Invisible Aligners",
-    subtitle: "Discreet orthodontic tooth straightening without metal wires",
-    category: "aligners",
-    description: "Achieve the straight, symmetrical smile you've always desired with custom transparent thermoplastic aligners. Removable for effortless dining and flawless oral hygiene.",
+    id: "teeth-cleaning",
+    title: "Teeth Cleaning & Scaling",
+    subtitle: "Ultrasonic tartar removal & gum care maintenance",
+    category: "general",
+    description: "Professional scaling and polishing to eliminate tartar, plaque, and surface stains while boosting gum health and breath freshness.",
     benefits: [
-      "Virtually 100% invisible in daily social & work interactions",
-      "No food restrictions — easily take them out to eat and brush",
-      "3D digital treatment progression simulation before you start",
-      "Gentle gradual forces with zero wire cuts or bracket irritation"
-    ],
-    duration: "6 - 14 Months",
-    painLevel: "Painless / Zero Discomfort",
-    idealFor: "Crowding, gaps, overbites, underbites, professional adults & teens",
-    iconName: "Layers",
-    image: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=900",
-    featured: true
-  },
-  {
-    id: "orthodontic-braces",
-    title: "Advanced Orthodontic Treatment",
-    subtitle: "Comprehensive bite alignment and jaw harmonization",
-    category: "aligners",
-    description: "Specialized orthodontic care featuring modern ceramic tooth-colored self-ligating brackets and customized archwires for faster, friction-free tooth movement.",
-    benefits: [
-      "Subtle tooth-colored ceramic brackets for aesthetic discretion",
-      "Corrects complex malocclusions and severe skeletal crowding",
-      "Improves long-term chewing function and jaw joint (TMJ) comfort",
-      "Regular gentle adjustments with minimal soreness"
-    ],
-    duration: "12 - 18 Months",
-    painLevel: "Gentle Care",
-    idealFor: "Complex bites, severe misalignments, growing children & teenagers",
-    iconName: "Smile",
-    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=900"
-  },
-  {
-    id: "pediatric-dentistry",
-    title: "Pediatric Dental Care",
-    subtitle: "Gentle, fear-free dentistry crafted specially for little smiles",
-    category: "pediatric",
-    description: "We turn dental visits into positive adventures! From cavity prevention sealants and fluoride varnishes to painless fillings, Dr. Manju Sharma creates a warm, tear-free environment for kids.",
-    benefits: [
-      "Tear-free, patient, and playful child-first approach",
-      "Painless fluoride applications & cavity-preventing fissure sealants",
-      "Early orthodontic screening for proper jaw development",
-      "Child-friendly oral hygiene education"
+      "Gentle ultrasonic plaque & calculus removal",
+      "Polishing for smooth, stain-free enamel",
+      "Gum inflammation prevention",
+      "Quick 30-minute procedure"
     ],
     duration: "30 Minutes",
     painLevel: "Painless / Zero Discomfort",
-    idealFor: "Infants, toddlers, school-age kids, and teens",
+    idealFor: "Bleeding gums, plaque buildup, routine 6-month checkups",
+    iconName: "Zap",
+    image: "https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&q=80&w=900"
+  },
+  {
+    id: "pediatric-dentistry",
+    title: "Pediatric & Family Dental Care",
+    subtitle: "Gentle, fear-free dentistry for kids and families",
+    category: "pediatric",
+    description: "We turn dental visits into positive experiences for children with gentle fillings, preventive sealants, and friendly oral care guidance.",
+    benefits: [
+      "Child-first playful & patient approach",
+      "Painless fluoride application & sealants",
+      "Early orthodontic growth evaluation",
+      "Family-friendly consultation environment"
+    ],
+    duration: "30 Minutes",
+    painLevel: "Gentle Care",
+    idealFor: "Children, teenagers, and family dental checkups",
     iconName: "Baby",
     image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=900"
-  },
-  {
-    id: "emergency-dental",
-    title: "Emergency Dental Services",
-    subtitle: "Priority same-day relief for acute toothache and trauma",
-    category: "emergency",
-    description: "Dental emergencies cannot wait. We offer priority same-day emergency slots for unbearable tooth pain, broken teeth, knocked-out teeth, or sudden facial swelling.",
-    benefits: [
-      "Immediate triage and pain-numbing within 15 minutes of arrival",
-      "Same-day repair of chipped, broken, or dislodged teeth",
-      "Direct on-call doctor coordination for urgent care",
-      "Comprehensive digital X-ray diagnosis on the spot"
-    ],
-    duration: "Immediate Priority",
-    painLevel: "Immediate Pain Relief",
-    idealFor: "Acute throbbing pain, fractured crowns, bleeding, dental trauma",
-    iconName: "Zap",
-    image: "https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&q=80&w=900",
-    featured: true
-  },
-  {
-    id: "sedation-dentistry",
-    title: "Comfort & Sedation Dentistry",
-    subtitle: "Total relaxation for patients with dental anxiety or phobia",
-    category: "general",
-    description: "Never let fear hold you back from a healthy smile. We provide calming mild sedation options, topical numbing gels, noise-canceling headsets, and gentle pacing so you feel completely at ease.",
-    benefits: [
-      "100% relaxed, worry-free dental experience",
-      "Zero memory of uncomfortable sounds or sensations",
-      "Allows multiple treatments to be completed in one sitting",
-      "Monitored under strict clinical safety protocols"
-    ],
-    duration: "Customized to Procedure",
-    painLevel: "Painless / Zero Discomfort",
-    idealFor: "High dental anxiety, sensitive gag reflex, lengthy procedures",
-    iconName: "HeartHandshake",
-    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=900"
   }
 ];
 
 export const BEFORE_AFTER_CASES: BeforeAfterCase[] = [
   {
     id: "case-1",
-    title: "Complete Smile Makeover & Porcelain Veneers",
-    treatment: "Cosmetic Dentistry",
-    description: "Correction of discolored enamel, fluorosis staining, and midline diastema (gap) with 8 custom ultra-thin E-max ceramic veneers.",
-    duration: "Completed in 5 Days (2 Sittings)",
-    beforeImage: "/cases/veneer_before.jpg",
-    afterImage: "/cases/veneer_after.jpg",
-    highlights: ["Natural translucency matched to complexion", "Zero gum irritation", "Permanent stain-resistant luster"]
+    title: "Orthodontic Alignment & Diastema Closure",
+    treatment: "Orthodontics",
+    description: "Correction of anterior gap and tooth crowding using clear aligners under Dr. Kiruthika Asokan's specialized care.",
+    duration: "Completed in 7 Months",
+    beforeImage: "/cases/aligner_before.jpg",
+    afterImage: "/cases/aligner_after.jpg",
+    highlights: ["100% wireless aligners", "Perfect arch symmetry", "Discreet & comfortable"]
   },
   {
     id: "case-2",
-    title: "Invisible Aligners Crowding Correction",
-    treatment: "Clear Aligners",
-    description: "Severe upper and lower anterior dental crowding and rotated incisors resolved comfortably using 3D clear invisible aligners.",
-    duration: "8 Months Treatment Time",
-    beforeImage: "/cases/aligner_before.jpg",
-    afterImage: "/cases/aligner_after.jpg",
-    highlights: ["100% wireless & discreet", "Perfect arch alignment", "Significantly easier flossing & hygiene"]
+    title: "Single-Sitting RCT & Zirconia Crown",
+    treatment: "Root Canal Treatment",
+    description: "Preservation of severely infected molar with rotary root canal therapy and CAD/CAM ceramic crown restoration.",
+    duration: "Completed in 2 Sittings",
+    beforeImage: "/cases/veneer_before.jpg",
+    afterImage: "/cases/veneer_after.jpg",
+    highlights: ["Complete pain relief", "Natural shade matching", "Full masticatory strength"]
   },
   {
     id: "case-3",
-    title: "Upper Premolar Swiss Dental Implant",
+    title: "Dental Implant Premolar Restoration",
     treatment: "Dental Implants",
-    description: "Permanent replacement of missing premolar gap with Swiss titanium implant placement and monolithic CAD/CAM Zirconia crown.",
-    duration: "Painless Same-Day Placement",
+    description: "Replacement of missing tooth with precision titanium implant and porcelain crown.",
+    duration: "Planned Implant Rehabilitation",
     beforeImage: "/cases/implant_before.jpg",
     afterImage: "/cases/implant_after.jpg",
-    highlights: ["Restored full biting force", "Indistinguishable from natural teeth", "Lifetime structural warranty"]
+    highlights: ["Restored biting power", "Identical to natural teeth", "Long-lasting durability"]
   }
 ];
 
 export const TESTIMONIALS_DATA: Testimonial[] = [
   {
     id: "rev-1",
-    author: "Pooja Malhotra",
-    location: "Sector 13, Gurugram",
-    treatment: "Single-Sitting RCT & Zirconia Crown",
+    author: "Kavitha Sundaram",
+    location: "Porur, Chennai",
+    treatment: "Root Canal Treatment & Crown",
     rating: 5,
-    comment: "I had extreme dental anxiety due to past bad experiences. Dr. Manju Sharma at Vrinda Dental Clinic made my Root Canal completely painless! She explained every single step calmly. The clinic on Mata Road opposite Mamta Hospital is spotless, beautiful, and so calming. Gurugram is lucky to have her!",
+    comment: "Dr. Kiruthika Asokan is an amazing dentist in Porur! I was terrified of getting a Root Canal, but she made the entire procedure 100% painless. Her clinic behind Grand Residence is spotless and so comforting. Highly recommend!",
     date: "2 weeks ago",
     verified: true,
     avatarBg: "bg-emerald-700"
   },
   {
     id: "rev-2",
-    author: "Rohit Khanna",
-    location: "Prem Nagar / Old Railway Road",
-    treatment: "Clear Aligners Treatment",
+    author: "Rajesh Kumar",
+    location: "Karambakkam, Porur",
+    treatment: "Orthodontic Braces",
     rating: 5,
-    comment: "Finished my clear aligner treatment here. Dr. Manju Sharma’s precision is remarkable. Every monthly checkup was prompt with zero waiting. Highly recommend Vrinda Dental Clinic to anyone looking for genuine, ethical, and world-class dental care in Sector 13 Gurugram.",
+    comment: "Got my teeth alignment treatment done here. Dr. Kiruthika Asokan explains everything clearly and patiently. 5.0 star treatment quality and prompt appointments with zero waiting time!",
     date: "1 month ago",
     verified: true,
     avatarBg: "bg-amber-700"
   },
   {
     id: "rev-3",
-    author: "Dr. Sunita Varma",
-    location: "Sector 14, Gurgaon",
-    treatment: "Full Ceramic Veneers & Whitening",
+    author: "Deepa Ramachandran",
+    location: "Ramapuram, Chennai",
+    treatment: "Dental Implant Procedure",
     rating: 5,
-    comment: "As a physician myself, I am very particular about sterile protocols. Vrinda Dental Clinic follows hospital-grade sterilization. Dr. Manju Sharma designed my smile makeover with incredible artistic sensibility. It looks completely natural, not fake white. Simply exceptional!",
+    comment: "Extremely satisfied with the dental implant done by Dr. Kiruthika Asokan. Very gentle surgeon, ethical pricing, and superior sterilization standards. Best dental clinic in Porur!",
     date: "3 weeks ago",
     verified: true,
     avatarBg: "bg-teal-700"
   },
   {
     id: "rev-4",
-    author: "Vikas Aggarwal",
-    location: "Civil Lines / Sector 13",
-    treatment: "Emergency Tooth Extraction & Implant",
+    author: "Senthil Nathan",
+    location: "Valasaravakkam, Chennai",
+    treatment: "Painless RCT & Dental Scaling",
     rating: 5,
-    comment: "Had severe sudden tooth pain on a Saturday evening. The clinic on Mata Road accommodated me immediately. Dr. Manju Sharma gave instant relief, followed by an implant procedure that was totally smooth. Transparent pricing and no unnecessary treatments pushed.",
+    comment: "Visited for severe toothache. Dr. Kiruthika Asokan provided immediate relief on the same day. Transparent pricing with no unnecessary treatments pushed. 5.0 Google rating is genuinely deserved.",
     date: "2 months ago",
     verified: true,
     avatarBg: "bg-blue-800"
   },
   {
     id: "rev-5",
-    author: "Meenakshi Joshi",
-    location: "Prem Nagar, Sector 13",
-    treatment: "Pediatric Dental Care for 6yo Daughter",
+    author: "Priya Venkatesh",
+    location: "Rajeswari Nagar, Porur",
+    treatment: "Pediatric Dental Checkup",
     rating: 5,
-    comment: "Finding a gentle dentist for kids is so hard. Dr. Manju Sharma is a magician with children! My 6-year-old daughter came out smiling and laughing after her cavity filling. The women-owned warmth and gentle touch makes all the difference.",
+    comment: "Took my 7-year-old son for cavity treatment. Dr. Kiruthika Asokan was so soft-spoken and friendly that my child didn't cry at all! Wonderful experience for kids and families.",
     date: "1 month ago",
     verified: true,
     avatarBg: "bg-rose-700"
-  },
-  {
-    id: "rev-6",
-    author: "Ananya Deshmukh",
-    location: "MG Road, Gurgaon",
-    treatment: "Cosmetic Smile Designing & Laser Whitening",
-    rating: 5,
-    comment: "Got my smile prepped right before my wedding in Gurgaon. Dr. Manju Sharma recommended laser whitening and minimal composite shaping. The results were stunning and totally natural! Zero tooth sensitivity afterwards. The best dental experience ever.",
-    date: "3 weeks ago",
-    verified: true,
-    avatarBg: "bg-purple-700"
-  },
-  {
-    id: "rev-7",
-    author: "Col. Sanjeev Bakshi (Retd.)",
-    location: "Sector 12, Gurugram",
-    treatment: "Full Arch Swiss Implant Rehabilitation",
-    rating: 5,
-    comment: "I can chew properly after almost 4 years. Dr. Manju Sharma’s surgical precision with implants is commendable. Honest clinic, zero inflated bills, convenient parking on Mata Road, and very caring staff. Highest recommendation.",
-    date: "1 month ago",
-    verified: true,
-    avatarBg: "bg-stone-700"
-  },
-  {
-    id: "rev-8",
-    author: "Shreya Singhal",
-    location: "Sector 14 / Old DLF",
-    treatment: "Clear Aligners & Aesthetic Contouring",
-    rating: 5,
-    comment: "Transparent aligners done with perfection! I was worried about speech issues during client meetings, but these aligners were totally invisible and comfortable. Vrinda Dental Clinic is spotless, modern, and very easily accessible opposite Mamta Hospital.",
-    date: "2 weeks ago",
-    verified: true,
-    avatarBg: "bg-emerald-800"
   }
 ];
 
 export const FAQS_DATA: FAQItem[] = [
   {
     category: "General & Appointments",
-    question: "Do I need to book an appointment beforehand?",
-    answer: "To ensure every patient receives dedicated, unhurried time with Dr. Manju Sharma and zero waiting time in the clinic, prior appointment booking is strongly recommended. However, for acute dental emergencies, walk-in urgent cases are attended to with immediate priority."
+    question: "Do I need to book an appointment beforehand at Dr Kiruthika Asokan's Dental Clinic?",
+    answer: "Prior appointment booking is recommended to ensure zero waiting time and dedicated unhurried attention with Dr. Kiruthika Asokan. Urgent dental emergencies are attended to with immediate priority."
   },
   {
     category: "Treatments & Pain",
-    question: "Are root canal treatments really painless at Vrinda Dental Clinic?",
-    answer: "Yes, 100%. We utilize advanced computer-assisted local anesthesia, painless computerized rotary endodontics, and digital apex locators. Over 95% of our patients report feeling no discomfort throughout the single-sitting procedure."
+    question: "Are Root Canal Treatments (RCT) painless?",
+    answer: "Yes, absolutely. We utilize modern rotary endodontics and local numbing techniques so that RCT procedures are comfortable and painless."
   },
   {
-    category: "Cosmetics & Aligners",
-    question: "How do Clear Aligners compare to traditional metal braces?",
-    answer: "Clear Aligners are virtually invisible, custom-molded from medical-grade transparent polymer, and completely removable. You can enjoy your regular meals and brush/floss effortlessly. Treatment is previewed in 3D digital simulation before we begin."
+    category: "Orthodontics & Implants",
+    question: "What orthodontic and implant services are available?",
+    answer: "Dr. Kiruthika Asokan provides comprehensive Orthodontic care (braces and clear aligners) as well as computer-guided Dental Implants for missing teeth replacement."
   },
   {
-    category: "Location & Amenities",
-    question: "How do I reach Vrinda Dental Clinic on Mata Road, Sector 13?",
-    answer: "Vrinda Dental Clinic is conveniently located on Mata Road, directly opposite to Mamta Hospital in Prem Nagar, Sector 13, Gurugram (Plus Code: F29M+RM Gurugram). Convenient parking and wheelchair-friendly ground access are available on-site."
+    category: "Location & Access",
+    question: "Where is Dr Kiruthika Asokan's Dental Clinic located in Porur?",
+    answer: "We are located at 71-A, 1st St, behind Grand Residence, Karambakkam, Rajeswari Nagar, Porur, Chennai, Tamil Nadu 600116. On-site parking and ground-level wheelchair access are available."
   },
   {
     category: "Cost & Transparency",
-    question: "How transparent is the pricing and payment options?",
-    answer: "We practice 100% transparent, ethical dentistry. After your comprehensive oral examination and digital X-ray evaluation, Dr. Manju Sharma provides a clear written treatment plan with fixed pricing and zero hidden costs. We accept all major UPI, Cards, NetBanking, and interest-free EMI options."
+    question: "Is the treatment pricing transparent?",
+    answer: "Yes, we practice 100% ethical and transparent dentistry. After evaluation, Dr. Kiruthika Asokan provides a clear treatment plan with fixed pricing and zero hidden fees."
   }
 ];

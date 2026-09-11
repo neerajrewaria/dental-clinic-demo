@@ -92,13 +92,13 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
             <div className="w-10 h-10 rounded-xl bg-white p-1 border border-white/20 shadow-md flex items-center justify-center shrink-0 overflow-hidden">
               <img 
                 src="/logo.png" 
-                alt="Vrinda Dental Clinic Logo" 
+                alt="Dr Kiruthika Asokan's Dental Clinic Logo" 
                 className="w-full h-full object-contain"
               />
             </div>
             <div>
               <span className="text-[10px] uppercase font-bold tracking-widest text-gold-400 block">
-                Vrinda Dental Clinic • Sector 13
+                Dr Kiruthika Asokan's Dental Clinic • Porur
               </span>
               <h3 className="font-serif text-lg sm:text-xl font-bold text-white">
                 Book Dedicated Consultation
@@ -184,7 +184,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
                     <input
                       type="text"
                       required
-                      placeholder="e.g. Ramesh Sharma"
+                      placeholder="e.g. Ramesh Kumar"
                       value={patientName}
                       onChange={(e) => setPatientName(e.target.value)}
                       className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-sand-50 border border-sand-300 text-slate-900 text-sm focus:ring-2 focus:ring-gold-500 focus:outline-none"
@@ -201,7 +201,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
                     <input
                       type="tel"
                       required
-                      placeholder="e.g. 98765 43210"
+                      placeholder="e.g. 91713 33368"
                       value={patientPhone}
                       onChange={(e) => setPatientPhone(e.target.value)}
                       className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-sand-50 border border-sand-300 text-slate-900 text-sm focus:ring-2 focus:ring-gold-500 focus:outline-none"
@@ -215,7 +215,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
                   </label>
                   <textarea
                     rows={2}
-                    placeholder="e.g. toothache in upper left molar, want teeth whitening"
+                    placeholder="e.g. toothache in upper left molar, want orthodontics consultation"
                     value={notes}
                     onChange={(e) => setNotes(e.target.value)}
                     className="w-full px-4 py-2 rounded-xl bg-sand-50 border border-sand-300 text-slate-900 text-sm focus:ring-2 focus:ring-gold-500 focus:outline-none resize-none"
@@ -226,7 +226,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
               {/* Zero Wait & Privacy Promise */}
               <div className="flex items-center gap-2 text-xs text-slate-500 bg-sand-50 p-2.5 rounded-xl border border-sand-200">
                 <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-                <span>Zero-Wait slot reserved with Dr. Manju Sharma. 100% confidential.</span>
+                <span>Zero-Wait slot reserved with Dr. Kiruthika Asokan. 100% confidential.</span>
               </div>
 
               {/* Submit CTA */}
@@ -261,22 +261,22 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
                   Thank You, {patientName}!
                 </h3>
                 <p className="text-slate-600 text-xs sm:text-sm mt-1">
-                  Your appointment request for <strong>{getServiceName()}</strong> on <strong>{selectedDate} ({selectedSlot})</strong> has been received by Dr. Manju Sharma’s clinic team.
+                  Your appointment request for <strong>{getServiceName()}</strong> on <strong>{selectedDate} ({selectedSlot})</strong> has been received by Dr. Kiruthika Asokan’s clinic team.
                 </p>
               </div>
 
               <div className="p-4 rounded-2xl bg-sand-50 border border-sand-200 text-left text-xs space-y-1.5">
                 <div className="flex items-center justify-between text-slate-700">
                   <span className="text-slate-500">Clinic:</span>
-                  <strong className="text-slate-900">Vrinda Dental Clinic</strong>
+                  <strong className="text-slate-900">Dr Kiruthika Asokan's Dental Clinic</strong>
                 </div>
                 <div className="flex items-center justify-between text-slate-700">
                   <span className="text-slate-500">Surgeon:</span>
-                  <strong className="text-slate-900">Dr. Manju Sharma</strong>
+                  <strong className="text-slate-900">Dr. Kiruthika Asokan</strong>
                 </div>
                 <div className="flex items-center justify-between text-slate-700">
                   <span className="text-slate-500">Address:</span>
-                  <strong className="text-slate-900">Mata Rd, Opp. Mamta Hospital, Sec 13 Gurgaon</strong>
+                  <strong className="text-slate-900">71-A, 1st St, behind Grand Residence, Porur, Chennai</strong>
                 </div>
               </div>
 

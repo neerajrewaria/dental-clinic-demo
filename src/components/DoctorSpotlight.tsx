@@ -34,7 +34,7 @@ export const DoctorSpotlight: React.FC<DoctorSpotlightProps> = ({ onOpenBooking,
             Gentle Hands. Surgical Precision.
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-3">
-            Dedicated to ethical, transparent, and pain-free dental healthcare for patients of all ages in Gurugram.
+            Dedicated to ethical, transparent, and pain-free dental healthcare for patients of all ages in Porur, Chennai.
           </p>
         </div>
 
@@ -49,13 +49,12 @@ export const DoctorSpotlight: React.FC<DoctorSpotlightProps> = ({ onOpenBooking,
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 aspect-[4/5] group">
                 <img 
                   src={DOCTOR_DATA.image} 
-                  alt={`Dr. Manju Sharma - Dental Surgeon at Vrinda Dental Clinic Gurgaon`}
+                  alt={`Dr. Kiruthika Asokan - Dental Surgeon at Dr Kiruthika Asokan's Dental Clinic Porur Chennai`}
                   loading="lazy"
-                  crossOrigin="anonymous"
                   onError={(e) => {
-                    (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=1000";
+                    (e.target as HTMLImageElement).src = "/doctor-image.png";
                   }}
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 />
                 
                 <div className="absolute inset-0 bg-gradient-to-t from-luxuryDark-950/90 via-luxuryDark-950/20 to-transparent"></div>
@@ -89,11 +88,11 @@ export const DoctorSpotlight: React.FC<DoctorSpotlightProps> = ({ onOpenBooking,
             
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs font-semibold mb-3">
               <GraduationCap className="w-4 h-4 text-emerald-600" />
-              <span>Certified BDS Dental Surgeon • Gurugram</span>
+              <span>Certified BDS Dental Surgeon • Porur, Chennai</span>
             </div>
 
             <h3 className="font-serif text-2xl sm:text-3xl font-bold text-luxuryDark-950 mb-4">
-              Restoring Confidence One Patient at a Time
+              Restoring Smiles & Confidence in Porur, Chennai
             </h3>
 
             {/* Paragraphs */}
@@ -107,7 +106,7 @@ export const DoctorSpotlight: React.FC<DoctorSpotlightProps> = ({ onOpenBooking,
             <div className="w-full mb-8">
               <h4 className="text-xs uppercase font-bold tracking-widest text-slate-900 mb-3 flex items-center gap-2">
                 <Award className="w-4 h-4 text-gold-600" />
-                <span>Areas of Clinical Mastery</span>
+                <span>Specialized Dental Care</span>
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                 {DOCTOR_DATA.specialties.map((spec, i) => (
@@ -126,7 +125,7 @@ export const DoctorSpotlight: React.FC<DoctorSpotlightProps> = ({ onOpenBooking,
                 className="px-6 py-3.5 rounded-xl bg-luxuryDark-950 text-gold-300 hover:text-white font-semibold text-sm shadow-md hover:shadow-xl transition-all duration-300 flex items-center gap-2 border border-gold-500/30"
               >
                 <Calendar className="w-4 h-4 text-gold-400" />
-                <span>Schedule Consultation with Dr. Manju Sharma</span>
+                <span>Schedule Consultation with Dr. Kiruthika Asokan</span>
               </button>
 
               <button

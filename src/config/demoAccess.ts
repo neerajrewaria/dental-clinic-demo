@@ -24,10 +24,10 @@ export const DEMO_CONFIG: DemoAccessConfig = {
   expiryDate: "2026-09-25T23:59:59+05:30",
 
   // Set to true to immediately test or preview the expired screen
-  forceExpired: true,
+  forceExpired: false,
 
   developerName: "Neeraj",
-  clinicName: "Vrinda Dental Clinic Orthodontic and Implant Centre",
+  clinicName: "Dr Kiruthika Asokan's Dental Clinic",
 };
 
 /**

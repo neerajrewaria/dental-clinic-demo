@@ -31,7 +31,7 @@ export const SmileTransformationSlider: React.FC<SmileTransformationSliderProps>
             See The Artistry in Every Smile
           </h2>
           <p className="text-sand-300 text-sm sm:text-base mt-3">
-            Drag the interactive slider below to reveal the transformative power of Dr. Manju Sharma’s precision orthodontic, cosmetic and restorative dentistry.
+            Drag the interactive slider below to reveal the transformative power of Dr. Kiruthika Asokan’s specialized orthodontic, root canal, and restorative dentistry.
           </p>
         </div>
 

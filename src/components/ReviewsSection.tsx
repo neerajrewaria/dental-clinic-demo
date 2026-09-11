@@ -103,20 +103,20 @@ export const ReviewsSection: React.FC = () => {
           <div>
             <span className="text-xs uppercase font-bold tracking-widest text-gold-700 mb-2 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold-50 border border-gold-200">
               <Sparkles className="w-3.5 h-3.5 text-gold-600" />
-              <span>Real Gurugram Patient Experiences</span>
+              <span>Real Patient Experiences in Porur, Chennai</span>
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-luxuryDark-950 mt-2">
-              Loved & Trusted Across Gurgaon
+              Loved & Trusted in Porur, Chennai
             </h2>
             <p className="text-slate-600 text-xs sm:text-sm mt-2 max-w-xl">
-              Patients from Sector 13, Prem Nagar, Old Railway Road, Sector 14, and across Gurugram share their genuine smile transformation journeys with Dr. Manju Sharma.
+              Patients from Porur, Karambakkam, Rajeswari Nagar, Ramapuram, Valasaravakkam, and across Chennai share their genuine smile transformation journeys with Dr. Kiruthika Asokan.
             </p>
           </div>
 
           {/* Google Score Pill */}
           <div className="flex items-center gap-4 p-4 rounded-3xl bg-[#FAF8F5] border border-sand-200 shadow-sm self-start lg:self-auto">
-            <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center font-serif text-2xl font-bold text-gold-600 border border-sand-200">
-              4.9
+            <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center font-serif text-xl font-bold text-gold-600 border border-sand-200">
+              5.0 ★
             </div>
             <div>
               <div className="flex items-center gap-1 text-gold-500">
@@ -125,10 +125,10 @@ export const ReviewsSection: React.FC = () => {
                 ))}
               </div>
               <span className="text-xs font-bold text-slate-800 block mt-0.5">
-                Google Rating • 100% Positive Care
+                Google Rating • 5.0 ★ (139 Reviews)
               </span>
               <span className="text-[11px] text-slate-500">
-                Verified reviews from Sector 13 & Gurugram patients
+                Verified Google reviews from Porur & Chennai patients
               </span>
             </div>
           </div>

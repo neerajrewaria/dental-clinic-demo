@@ -7,7 +7,7 @@ interface MobileStickyBarProps {
 }
 
 export const MobileStickyBar: React.FC<MobileStickyBarProps> = ({ onOpenBooking, onDemoAction }) => {
-  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Vrinda Dental Clinic Mata Rd opposite to Mamta hospital Prem Nagar Sector 13 Gurugram Haryana 122001")}`;
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Dr Kiruthika Asokan's Dental Clinic 71-A 1st St behind Grand Residence Karambakkam Rajeswari Nagar Porur Chennai Tamil Nadu 600116")}`;
 
   const handleCallClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -31,7 +31,7 @@ export const MobileStickyBar: React.FC<MobileStickyBarProps> = ({ onOpenBooking,
         <button
           onClick={handleCallClick}
           className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-sand-100 hover:bg-sand-200 text-slate-800 transition-colors border border-sand-200 active:scale-95"
-          aria-label="Call Vrinda Dental Clinic"
+          aria-label="Call Dr Kiruthika Asokan's Dental Clinic"
         >
           <Phone className="w-4 h-4 text-gold-700" />
           <span className="text-[10px] font-bold mt-1 tracking-tight">Call</span>
@@ -53,7 +53,7 @@ export const MobileStickyBar: React.FC<MobileStickyBarProps> = ({ onOpenBooking,
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-sand-100 hover:bg-sand-200 text-slate-800 transition-colors border border-sand-200 active:scale-95"
-          aria-label="Get Directions to Sector 13 Clinic"
+          aria-label="Get Directions to Porur Clinic"
         >
           <MapPin className="w-4 h-4 text-slate-700" />
           <span className="text-[10px] font-bold mt-1 tracking-tight">Directions</span>

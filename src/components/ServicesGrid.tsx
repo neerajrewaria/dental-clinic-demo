@@ -67,7 +67,7 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ onOpenBooking }) => 
             </h2>
           </div>
           <p className="text-sm sm:text-base text-slate-600 max-w-lg leading-relaxed">
-            Every procedure at Vrinda Dental Clinic combines precision microsurgery, biological enamel preservation, and painless anesthetic technology.
+            Every procedure at Dr Kiruthika Asokan's Dental Clinic combines high clinical precision, conservative tooth preservation, and gentle patient care.
           </p>
         </div>
 
